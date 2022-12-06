@@ -49,5 +49,11 @@
         <span class="navbar-menu__text">Manager Pages</span>
       </a>
     </div>
+    <div class="navbar-menu__item">
+      <a href="statistic.php" class="navbar-menu__link">
+        <i class="fa-solid fa-chart-column"></i>
+        <span class="navbar-menu__text">Statistic Bookings</span>
+      </a>
+    </div>
   </div>
 </div>

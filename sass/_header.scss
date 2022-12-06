@@ -1,9 +1,10 @@
 @import url(./utils.scss);
 
 .header {
-  background-color: #ffff;
-  padding-top: 37px;
   padding-inline: 20px;
+  padding-block: 25px;
+  background-image: linear-gradient(to bottom right, #70e1f5, #ffd194);
+
   &-top {
     padding: 15px 20px;
     background: #feeaec;
@@ -56,6 +57,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0;
     &:first-child {
       & > li:first-child {
         margin-right: 20px;

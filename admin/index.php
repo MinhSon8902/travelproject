@@ -17,7 +17,7 @@ $_SESSION['alogin']=$_POST['username'];
 $_SESSION['notiadmin'] = "Chào mừng Admin đã đăng nhập trang quản lý";
 echo "<script type='text/javascript'> document.location = 'dashboard.php'; </script>";
 } else{
-  $noti = 'Ban da dang nhap sai admin';
+  $noti = 'Bạn đã nhập sai tài khoản hoặc mật khẩu admin';
 	echo "<script>alert('Invalid Details');</script>";
 }
 }

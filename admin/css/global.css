@@ -23,13 +23,19 @@
 }
 .header-action {
   margin-inline: auto 20px;
+  border: 1px solid #cfcfcf;
+  padding: 8px;
+  border-radius: 10px;
 }
 .header-action__link {
   display: inline-block;
+}
+.header-action__link:not(:first-child) {
   margin-left: 11px;
 }
 .header-action__icon {
   font-size: 20px;
+  color: #3d474d;
 }
 .header-admin {
   display: flex;

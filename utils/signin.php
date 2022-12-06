@@ -97,11 +97,11 @@ echo "<script type='text/javascript'> document.location = 'index.php'; </script>
         <form action="" method="post" class="form">
           <div class="form-group">
             <label for="input-name" class="form-label">Username</label>
-            <input type="text" name="email" id="email" placeholder="Username">
+            <input type="text" name="email" id="email" placeholder="Username" required>
           </div>
           <div class="form-group">
             <label for="input-password" class="form-label">Password</label>
-            <input type="password" name="password" id="password" placeholder="Password">
+            <input type="password" name="password" id="password" placeholder="Password" required>
             <!-- <i class="fa-regular fa-eye-slash"></i>
             <i class="fa-regular fa-eye"></i> -->
           </div>

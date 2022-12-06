@@ -24,9 +24,9 @@ else{
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link rel="stylesheet" href="./css/reset.css?v=<?php echo time(); ?>" type='text/css'>
-  <link rel="stylesheet" href="./css/utils.css ?v=<?php echo time(); ?>" type='text/css'>
-  <link rel="stylesheet" href="./css/global.css ?v=<?php echo time(); ?>" type='text/css'>
-  <link rel="stylesheet" href="./css/main.css ?v=<?php echo time(); ?>" type='text/css'>
+  <link rel="stylesheet" href="./css/utils.css?v=<?php echo time(); ?>" type='text/css'>
+  <link rel="stylesheet" href="./css/global.css?v=<?php echo time(); ?>" type='text/css'>
+  <link rel="stylesheet" href="./css/main.css?v=<?php echo time(); ?>" type='text/css'>
 </head>
 
 <body>
@@ -38,7 +38,8 @@ else{
       </div>
       <div class="main-right">
         <div class="main-navigation">
-          <div class="main-navigation__item"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i>
+          <div class="main-navigation__item"><a href="index.html">Home</a><i
+              class="fa-solid fa-chevron-right"></i>Dashboard
           </div>
         </div>
         <div class="main-content">

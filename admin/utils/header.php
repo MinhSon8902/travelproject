@@ -1,32 +1,3 @@
-<!-- <div class="header-main">
-  <div class="logo-w3-agile">
-    <h1><a href="dashboard.php">Tourism Management System</a></h1>
-  </div>
-  <div class="profile_details w3l">
-    <ul>
-      <li class="dropdown profile_details_drop">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-          <div class="profile_img">
-            <span class="prfil-img"><img src="images/User-icon.png" alt=""> </span>
-            <div class="user-name">
-              <p>Welcome</p>
-              <span>Administrator</span>
-            </div>
-            <i class="fa fa-angle-down"></i>
-            <i class="fa fa-angle-up"></i>
-            <div class="clearfix"></div>
-          </div>
-        </a>
-        <ul class="dropdown-menu drp-mnu">
-          <li> <a href="change-password.php"><i class="fa fa-user"></i> Profile</a> </li>
-          <li> <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a> </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-  <div class="clearfix"> </div>
-</div> -->
-
 <div class="header">
   <div class="header-container">
     <a class="header-logo" href="dashboard.php">
@@ -45,9 +16,9 @@
     </a>
     <h2 class="header-heading">Manager Travel</h2>
     <div class="header-action">
-      <a href="" class="header-action__link"><i class="fa-regular fa-bookmark header-action__icon"></i></a>
-      <a href="" class="header-action__link"><i class="fa-regular fa-bell header-action__icon"></i></a>
-      <a href="" class="header-action__link"><i class="fa-regular fa-comments header-action__icon"></i></a>
+      <a href="#" class="header-action__link"><i class="fa-regular fa-bookmark header-action__icon"></i></a>
+      <a href="#" class="header-action__link"><i class="fa-regular fa-bell header-action__icon"></i></a>
+      <a href="#" class="header-action__link"><i class="fa-regular fa-comments header-action__icon"></i></a>
     </div>
     <div class="header-admin">
       <i class="fa-solid fa-user-gear"></i>

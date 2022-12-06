@@ -1,6 +1,6 @@
 :root {
   --primary-font: 'Inter', sans-serif;
-  --body-size: 1440px;
+  --body-size: 1500px;
   --container: 1100px;
 }
 
@@ -38,6 +38,10 @@ body {
   &--danger {
     padding: 13px 21px;
     background-color: #ef5350 !important;
+  }
+  &:hover {
+    background-color: #d8f7ff !important;
+    color: #15c2f9 !important;
   }
 }
 .notify {

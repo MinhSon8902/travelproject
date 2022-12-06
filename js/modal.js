@@ -1,9 +1,3 @@
-// const a = document.getElementById('modalBoxSign')
-// a.addEventListener('click', () => {
-//   const myModal = new window.bootstrap.Modal(document.getElementById('lightbox'))
-//   myModal.show()
-// })
-
 function ShowModal(modalElement, modal) {
   const element = document.getElementById(modalElement)
   if (!element) return

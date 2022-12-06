@@ -104,19 +104,19 @@ echo "<script type='text/javascript'> document.location = 'thankyou.php'; </scri
         <form action="" method="post" class="form">
           <div class="form-group">
             <label for="input-name" class="form-label">Full Name</label>
-            <input type="text" name="name" id="name" placeholder="Full Name">
+            <input type="text" name="name" id="name" placeholder="Full Name" required>
           </div>
           <div class="form-group">
             <label for="input-name" class="form-label">Mobile</label>
-            <input type="text" name="mobile" id="mobile" placeholder="Mobile">
+            <input type="text" name="mobile" id="mobile" placeholder="Mobile" required>
           </div>
           <div class="form-group">
             <label for="input-name" class="form-label">Email</label>
-            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="email" name="email" id="email" placeholder="Email" required>
           </div>
           <div class="form-group">
             <label for="input-password" class="form-label">Password</label>
-            <input type="password" name="password" id="password" placeholder="Password">
+            <input type="password" name="password" id="password" placeholder="Password" required>
             <!-- <i class="fa-regular fa-eye-slash"></i>
             <i class="fa-regular fa-eye"></i> -->
           </div>

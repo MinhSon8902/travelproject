@@ -2,6 +2,21 @@
 
 .footer {
   padding-block: 70px;
+  position: relative;
+  &-icon {
+    font-size: 20px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: #393e46;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+  }
   &-container {
     display: flex;
     align-items: center;
@@ -84,7 +99,8 @@
 }
 
 .input-register {
-  padding: 13px 26px;
+  padding-block: 13px;
+  padding-inline: 26px 50px;
   width: 100%;
   border: 2px solid #e6e8ec;
   border-radius: 24px;

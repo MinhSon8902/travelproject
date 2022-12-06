@@ -109,7 +109,7 @@ $error="Something went wrong. Please try again";
               <div class="form-group">
                 <label for="" class="form-label">Package Features</label>
                 <input type="text" class="form-input" name="packagefeatures" id="packagefeatures"
-                  placeholder="Package Features Eg-free Pickup-drop facility" required>
+                  placeholder="Package Features" required>
               </div>
               <div class="form-group">
                 <label for="packagedetails" class="form-label">Package Details</label>

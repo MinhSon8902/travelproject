@@ -162,7 +162,6 @@ $rows = $querysearch->rowCount();
 
             <?php
               if(isset($type) && strcmp($key,' ') !== 0 ){    
-                echo $key;
                 if($rows > 0)
                 {
                   foreach($resultsearch as $result)

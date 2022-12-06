@@ -99,11 +99,6 @@
     color: #23262f;
   }
   &-text {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipse;
-    overflow: hidden;
     font-weight: 400;
     font-size: 17px;
     line-height: calc(20 / 14);

@@ -269,8 +269,8 @@ $rows = $querysearch->rowCount();
                 <div class="booksteps-user">
                   <div class="booksteps-user__img"><img src="./images/avator.png" alt="" /></div>
                   <div class="booksteps-user__info">
-                    <span class="booksteps-user__name">Lucky</span>
-                    <p class="booksteps-user__desc">Co-Founder and CEO</p>
+                    <span class="booksteps-user__name">BUI MINH SON</span>
+                    <p class="booksteps-user__desc">Co-Founder and CEO and Developer</p>
                   </div>
                 </div>
               </div>

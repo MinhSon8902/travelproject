@@ -80,7 +80,7 @@ $msg="Booking Confirm successfully";
                 <th>Name</th>
                 <th>Mobile No.</th>
                 <th>Email Id</th>
-                <th>RegDate </th>
+                <th>Tour </th>
                 <th>From /To </th>
                 <th>Comment </th>
                 <th>Status </th>
@@ -121,7 +121,7 @@ echo "Canceled by you at " .$result->upddate;
 } 
 if($result->status==2 and $result->cancelby=='u')
 {
-echo "Canceled by User at " .$result->upddate;
+echo "Canceled by user at " .$result->upddate;
 
 }
 ?></td>

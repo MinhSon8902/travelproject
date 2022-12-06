@@ -1,9 +1,9 @@
 @import url(./utils.scss);
 @import url(./utils.scss);
 .header {
-  background-color: white;
-  padding-top: 37px;
   padding-inline: 20px;
+  padding-block: 25px;
+  background-image: linear-gradient(to bottom right, #70e1f5, #ffd194);
 }
 .header-top {
   padding: 15px 20px;
@@ -59,6 +59,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0;
 }
 .header-list:first-child > li:first-child {
   margin-right: 20px;
@@ -116,6 +117,21 @@
 
 .footer {
   padding-block: 70px;
+  position: relative;
+}
+.footer-icon {
+  font-size: 20px;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  background-color: #393e46;
+  display: block;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
 }
 .footer-container {
   display: flex;
@@ -202,7 +218,8 @@
 }
 
 .input-register {
-  padding: 13px 26px;
+  padding-block: 13px;
+  padding-inline: 26px 50px;
   width: 100%;
   border: 2px solid #e6e8ec;
   border-radius: 24px;
