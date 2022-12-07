@@ -12,7 +12,7 @@ if(isset($_POST['submit']))
 {
 
 $pimage=$_FILES["packageimage"]["name"];
-move_uploaded_file($_FILES["packageimage"]["tmp_name"],"pacakgeimages/".$_FILES["packageimage"]["name"]);
+move_uploaded_file($_FILES["packageimage"]["tmp_name"],"packageimages/".$_FILES["packageimage"]["name"]);
 $sql="update TblTourPackages set PackageImage=:pimage where PackageId=:imgid";
 $query = $dbh->prepare($sql);
 
@@ -56,7 +56,7 @@ $msg="Package Created Successfully";
       </div>
       <div class="main-right">
         <div class="main-navigation">
-          <div class="main-navigation__item"><a href="index.html">Home</a><i
+          <div class="main-navigation__item"><a href="dashboard.php">Home</a><i
               class="fa-solid fa-chevron-right"></i>Update Package Image
           </div>
         </div>

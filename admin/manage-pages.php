@@ -58,7 +58,7 @@ $msg="Page data updated successfully";
     </div>
     <div class="main-right">
       <div class="main-navigation">
-        <div class="main-navigation__item"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i>Update
+        <div class="main-navigation__item"><a href="dashboard.php">Home</a><i class="fa-solid fa-chevron-right"></i>Update
           Page Data
         </div>
       </div>

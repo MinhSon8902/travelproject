@@ -14,12 +14,12 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-$_SESSION['msg']="Info successfully submitted ";
+$_SESSION['msgok']="Info successfully submitted ";
 echo "<script type='text/javascript'> document.location = 'thankyou.php'; </script>";
 }
 else 
 {
-$_SESSION['msg']="Something went wrong. Please try again.";
+$_SESSION['msgfa']="Something went wrong. Please try again.";
 echo "<script type='text/javascript'> document.location = 'thankyou.php'; </script>";
 }
 }

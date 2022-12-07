@@ -105,7 +105,6 @@ else{
               <th>Admin Remark</th>
               <th>Reg Date</th>
               <th>Remark date</th>
-
             </tr>
             <?php 
 

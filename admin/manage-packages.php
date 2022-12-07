@@ -40,7 +40,7 @@ else{
     </div>
     <div class="main-right">
       <div class="main-navigation">
-        <div class="main-navigation__item"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i>Manager
+        <div class="main-navigation__item"><a href="dashboard.php">Home</a><i class="fa-solid fa-chevron-right"></i>Manager
           Packages
         </div>
       </div>
@@ -79,7 +79,8 @@ else{
                 <td><?php echo htmlentities($result->Creationdate);?></td>
                 <td><a href="update-package.php?pid=<?php echo htmlentities($result->PackageId);?>">
                     <button type="button" class="btn btn--primary">View Details</button></a></td>
-                <td><a href="delete-packages.php?did=<?php echo htmlentities($result->PackageId);?>">
+                <td><a onclick='return confirm("Bạn có muốn xóa không ?");'
+                    href="delete-packages.php?did=<?php echo htmlentities($result->PackageId);?>">
                     <button type="button" class="btn btn--danger">Delete</button></a></td>
               </tr>
               <?php $cnt=$cnt+1;}

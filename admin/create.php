@@ -72,7 +72,7 @@ $error="Something went wrong. Please try again";
       </div>
       <div class="main-right">
         <div class="main-navigation">
-          <div class="main-navigation__item"><a href="index.html">Home</a><i
+          <div class="main-navigation__item"><a href="dashboard.php">Home</a><i
               class="fa-solid fa-chevron-right"></i>Create
           </div>
         </div>

@@ -52,7 +52,7 @@ $msg="Enquiry  successfully read";
     </div>
     <div class="main-right">
       <div class="main-navigation">
-        <div class="main-navigation__item"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i>Manage
+        <div class="main-navigation__item"><a href="dashboard.php">Home</a><i class="fa-solid fa-chevron-right"></i>Manage
           Enquiries
         </div>
       </div>

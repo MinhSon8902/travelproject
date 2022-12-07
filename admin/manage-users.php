@@ -40,7 +40,7 @@ else{
     </div>
     <div class="main-right">
       <div class="main-navigation">
-        <div class="main-navigation__item"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i>Manage
+        <div class="main-navigation__item"><a href="dashboard.php">Home</a><i class="fa-solid fa-chevron-right"></i>Manage
           Users
         </div>
       </div>
@@ -76,7 +76,8 @@ foreach($results as $result)
                 <td><?php echo htmlentities($result->EmailId);?></td>
                 <td><?php echo htmlentities($result->RegDate);?></td>
                 <td><?php echo htmlentities($result->UpdationDate);?></td>
-                <td><a href="delete-user.php?uid=<?php echo htmlentities($result->id);?>">
+                <td><a onclick='return confirm("Bạn có muốn xóa không ?");'
+                    href="delete-user.php?uid=<?php echo htmlentities($result->id);?>">
                     <button type="button" class="btn btn--danger">Delete</button></a></td>
               </tr>
               <?php $cnt=$cnt+1;}
