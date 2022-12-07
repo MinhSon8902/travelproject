@@ -31,6 +31,9 @@ $msg="Profile Updated Successfully";
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profile</title>
+  <link rel="shortcut icon"
+    href="https://cdn-icons-png.flaticon.com/512/1257/1257385.png?w=740&t=st=1670319127~exp=1670319727~hmac=3df5cfb7b4b4084477c31021f476ce730b54abf3c78aacf2ff06db0c21295839"
+    type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -65,14 +68,14 @@ $msg="Profile Updated Successfully";
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1561350409-e16d46acca4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/premium-vector/boy-giving-presents-girl-christmas-holiday-celebration-hand-drawn-cartoon-art-illustration_56104-916.jpg?w=826"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Người Ninh Bình</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1564525449886-25b4d9643b11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/free-vector/couple-love-color-set-isolated-icons-with-human-characters-loving-man-woman-vector-illustration_1284-69165.jpg?w=1380&t=st=1670386238~exp=1670386838~hmac=f69503cdb24cd49af2f317b59f8f3b366b70186c6decc539fa63f6e577775c24"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Thông tin tài khoản</p>

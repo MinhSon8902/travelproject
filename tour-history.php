@@ -44,6 +44,9 @@ foreach($results as $result)
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tour History</title>
+  <link rel="shortcut icon"
+    href="https://cdn-icons-png.flaticon.com/512/1257/1257385.png?w=740&t=st=1670319127~exp=1670319727~hmac=3df5cfb7b4b4084477c31021f476ce730b54abf3c78aacf2ff06db0c21295839"
+    type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -73,35 +76,35 @@ foreach($results as $result)
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1556225494-9255d866700e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            src="https://img.freepik.com/premium-photo/landmark-pagoda-doi-inthanon-with-mist-fog-during-sunset-timeat-chiang-mai-thailand_33835-815.jpg?w=1060"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Lịch sử</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1561350409-e16d46acca4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/free-photo/asian-woman-wearing-chinese-traditional-dress-ban-rak-thai-village-mae-hong-son-province-thailand_335224-1169.jpg?w=996&t=st=1670386327~exp=1670386927~hmac=e6a35200be62e066703d70871e1cc800da6ac71644bb9e4363f34dd3d252643e"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Các chuyến đi</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1564525449886-25b4d9643b11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/premium-photo/asian-couple-with-suitcase-bag-backpack-standing-beach_9083-3241.jpg?w=996"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Lịch trình</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1556225494-31071a392262?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/free-photo/tourist-sitting-phu-sub-lek-viewpoint-sunset-lopburi-thailand_335224-1390.jpg?w=996&t=st=1670386359~exp=1670386959~hmac=add2e098e548206b9293ea8fdd5ea00c9495798b3eef58d01d3197bead05e329"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Chặng khám phá</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1527428050273-21bd264db1b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+            src="https://img.freepik.com/free-photo/turquoise-tropical-beautiful-outdoors-tourism_1258-134.jpg?w=996&t=st=1670386375~exp=1670386975~hmac=0bb3a1155a828b304c0799017e67b7d24d58133cc8d14152c042b511c2550955"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Địa điểm</p>

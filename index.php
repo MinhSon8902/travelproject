@@ -23,6 +23,9 @@ $rows = $querysearch->rowCount();
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <link rel="shortcut icon"
+    href="https://cdn-icons-png.flaticon.com/512/1257/1257385.png?w=740&t=st=1670319127~exp=1670319727~hmac=3df5cfb7b4b4084477c31021f476ce730b54abf3c78aacf2ff06db0c21295839"
+    type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -59,35 +62,33 @@ $rows = $querysearch->rowCount();
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1556225494-9255d866700e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            src="https://img.freepik.com/premium-vector/happy-new-year-2023-chinese-new-year-year-cat-happy-lunar-new-year-2023-cat-illustration_692630-132.jpg?w=1380"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Phục vụ chuyên nghiệp</p>
         </div>
         <div class="swiper-slide">
-          <img
-            src="https://images.unsplash.com/photo-1561350409-e16d46acca4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            alt="" />
+          <img src="https://img.freepik.com/premium-vector/travel-asia-road-trip_207954-235.jpg?w=1060" alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Uy tín</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1564525449886-25b4d9643b11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/free-vector/realistic-travel-agency-template-design_23-2149340532.jpg?w=1060&t=st=1670386546~exp=1670387146~hmac=fcc18f0b0126321a43d821787ccab19afb085c5d23e13614f1ebecfdd1eddc76"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Trải nghiệm tuyệt hảo</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1556225494-31071a392262?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/premium-vector/travel-world-road-trip-tourism-landmarks-globe-concept-website-template-illustration-modern-flat-design_207954-6.jpg?w=996"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Cảm giác mạnh mẽ</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1527428050273-21bd264db1b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+            src="https://img.freepik.com/free-vector/thailand-cities-skyline-silhouette-vector-illustration-white-background-business-travel-tourism-concept-with-famous-thailand-landmarks-image-presentation-banner-web-site_596401-497.jpg?w=1380&t=st=1670386570~exp=1670387170~hmac=610566dacbeab46c58e41930ab35d17fd67145cc094b0289912d3bf17704bc43"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Tận hưởng</p>
@@ -103,22 +104,22 @@ $rows = $querysearch->rowCount();
           <div class="partner-container">
             <ul class="partner-list">
               <li class="partner-item wow bounceInLeft">
-                <a href="" class="partner-link"><img src="./images/amadeus.png" alt="" /></a>
+                <a href="#" class="partner-link"><img src="./images/amadeus.png" alt="" /></a>
               </li>
               <li class="partner-item wow bounceInLeft" data-wow-delay="1.5s">
-                <a href="" class=" partner-link"><img src="./images/booking.png" alt="" /></a>
+                <a href="#" class=" partner-link"><img src="./images/booking.png" alt="" /></a>
               </li>
               <li class="partner-item wow bounceInLeft" data-wow-delay="2s">
-                <a href="" class="partner-link"><img src="./images/trivago.png" alt="" /></a>
+                <a href="#" class="partner-link"><img src="./images/trivago.png" alt="" /></a>
               </li>
               <li class="partner-item wow bounceInLeft" data-wow-delay="2.5s">
-                <a href="" class="partner-link"><img src="./images/trainline.png" alt="" /></a>
+                <a href="#" class="partner-link"><img src="./images/trainline.png" alt="" /></a>
               </li>
               <li class="partner-item wow bounceInLeft" data-wow-delay="3s">
-                <a href="" class="partner-link"><img src="./images/cheapflight.png" alt="" /></a>
+                <a href="#" class="partner-link"><img src="./images/cheapflight.png" alt="" /></a>
               </li>
               <li class="partner-item wow bounceInLeft" data-wow-delay="3.5s">
-                <a href="" class="partner-link"><img src="./images/momondo.png" alt="" /></a>
+                <a href="#" class="partner-link"><img src="./images/momondo.png" alt="" /></a>
               </li>
             </ul>
           </div>
@@ -144,7 +145,7 @@ $rows = $querysearch->rowCount();
                   <p class="tripplanning-item__desc">
                     Partner allows you to browse multiple carriers for travel.
                   </p>
-                  <a href="" class="tripplanning-item__link">Learn More<span><svg width="24" height="24"
+                  <a href="#" class="tripplanning-item__link">Learn More<span><svg width="24" height="24"
                         viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
@@ -168,7 +169,7 @@ $rows = $querysearch->rowCount();
                   <p class="tripplanning-item__desc">
                     The website is a way for partners to communicate with their customers.
                   </p>
-                  <a href="" class="tripplanning-item__link">Learn More<span><svg width="24" height="24"
+                  <a href="#" class="tripplanning-item__link">Learn More<span><svg width="24" height="24"
                         viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
@@ -189,7 +190,7 @@ $rows = $querysearch->rowCount();
                   <p class="tripplanning-item__desc">
                     The eBook Reader is a new way to look at e-books.
                   </p>
-                  <a href="" class="tripplanning-item__link">Learn More<span><svg width="24" height="24"
+                  <a href="#" class="tripplanning-item__link">Learn More<span><svg width="24" height="24"
                         viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"

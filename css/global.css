@@ -7,7 +7,7 @@
 }
 .header-top {
   padding: 15px 20px;
-  background: #feeaec;
+  background-image: linear-gradient(to bottom right, #4ca1af, #c4e0e5);
 }
 .header-top__container {
   display: flex;
@@ -19,6 +19,7 @@
   display: flex;
   align-items: center;
   margin-left: -30px;
+  margin-bottom: 0;
 }
 .header-top__list > li:first-child {
   font-size: 30px;
@@ -42,6 +43,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  margin-bottom: 0;
 }
 .header-info > li > a {
   padding: 10px 24px 10px 24px;

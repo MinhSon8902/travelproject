@@ -37,6 +37,9 @@ $error="Email id or Mobile no is invalid";
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Forgot Password</title>
+  <link rel="shortcut icon"
+    href="https://cdn-icons-png.flaticon.com/512/1257/1257385.png?w=740&t=st=1670319127~exp=1670319727~hmac=3df5cfb7b4b4084477c31021f476ce730b54abf3c78aacf2ff06db0c21295839"
+    type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -73,36 +76,35 @@ $error="Email id or Mobile no is invalid";
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img
-            src="https://images.unsplash.com/photo-1556225494-9255d866700e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+          <img src="https://img.freepik.com/premium-vector/background-urban-landscape-hanoi_207954-519.jpg?w=1060"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Bạn quên mật khẩu</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1561350409-e16d46acca4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/free-vector/vietnamese-girl-boy-red-costume_1308-20597.jpg?w=826&t=st=1670385555~exp=1670386155~hmac=eca83163942155469bf2203ad3cc1b37ac6023f6d53105e35d931a64fdf4bedb"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Hãy nhớ kỹ lại nó</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1564525449886-25b4d9643b11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/premium-vector/vietnamese-woman-hold-bicycle-walk-pass-rice-field_11700-171.jpg?w=1380"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Bạn phải điền đúng thông tin mới có thể khôi phục</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1556225494-31071a392262?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/premium-vector/vietnamese-woman-man-ride-bicycle-pass-landmark_11700-257.jpg?w=1380"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Mật khẩu sẽ trả về tài khoản của bạn</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1527428050273-21bd264db1b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+            src="https://img.freepik.com/free-vector/welcome-vietnam-landing-page-web-template_1284-24482.jpg?w=900&t=st=1670385597~exp=1670386197~hmac=32cc8026a2214dd3a65795517e30aeec4c98b6aca8270e19d53e35542d755e20"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Tạm biệt</p>

@@ -38,6 +38,9 @@ $error="Something went wrong. Please try again";
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Enquiry</title>
+  <link rel="shortcut icon"
+    href="https://cdn-icons-png.flaticon.com/512/1257/1257385.png?w=740&t=st=1670319127~exp=1670319727~hmac=3df5cfb7b4b4084477c31021f476ce730b54abf3c78aacf2ff06db0c21295839"
+    type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -65,35 +68,34 @@ $error="Something went wrong. Please try again";
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1556225494-9255d866700e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            src="https://img.freepik.com/free-vector/spring-landscape_23-2148848484.jpg?w=996&t=st=1670385455~exp=1670386055~hmac=9a5b63972241c7d405ee0a49f58600a408929bff2a88e8cad2c1ba95bff7dbbe"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Bạn đang có thắc mắc</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1561350409-e16d46acca4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/premium-vector/illustration-fuji-mountain-japan-beautiful-nature-snowy-mountain-with-sakura-blossoms-japanese-romantic-place-illustration-any-design-decoration_306119-1388.jpg?w=1380"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Bạn hãy yêu cầu cho chúng tôi</p>
         </div>
         <div class="swiper-slide">
-          <img
-            src="https://images.unsplash.com/photo-1564525449886-25b4d9643b11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          <img src="https://img.freepik.com/premium-vector/travel-japan-famous-landmarks-asian_49537-44.jpg?w=1380"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Chúng tôi sẽ phản hồi bạn sớm nhất có thể</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1556225494-31071a392262?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/premium-vector/cartoon-forest-animals-wild-bear-funny-squirrel-cute-birds-forests-trees-kids-vector-background-illustration_102902-1535.jpg?w=1380"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Hãy nêu những thắc mắc của bạn</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1527428050273-21bd264db1b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+            src="https://img.freepik.com/free-vector/flat-jungle-composition-birds-fly-dense-jungle-pink-flamingos-large-parrots-vector-illustration_1284-74327.jpg?w=1380&t=st=1670385504~exp=1670386104~hmac=93182d36d627a9b2beea54947601784f09e33e349d75ef053e1aaa44d30d9cf5"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Cảm ơn bạn đã gửi yêu cầu</p>

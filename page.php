@@ -11,6 +11,9 @@ include('utils/config.php');
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page</title>
+  <link rel="shortcut icon"
+    href="https://cdn-icons-png.flaticon.com/512/1257/1257385.png?w=740&t=st=1670319127~exp=1670319727~hmac=3df5cfb7b4b4084477c31021f476ce730b54abf3c78aacf2ff06db0c21295839"
+    type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -39,35 +42,35 @@ include('utils/config.php');
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1556225494-9255d866700e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            src="https://img.freepik.com/free-vector/kitchen-asian-style-chinese-japanese-room_33099-1872.jpg?w=996&t=st=1670385989~exp=1670386589~hmac=f92f5c265b3f50f7dfe600ac0bfcd85ef6fc3402dd5decbe508e503451fbe4d2"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Phong Cảnh Hữu Tình</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1561350409-e16d46acca4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/premium-vector/summer-cartoon-illustration-modern-cottage-house-among-trees-green-countryside-field-outside-town_134830-236.jpg?w=1380"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Lãng Mạn</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1564525449886-25b4d9643b11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/free-vector/travel-facebook-ad-design-template_23-2149087051.jpg?w=1060&t=st=1670386039~exp=1670386639~hmac=155411190447e9cfe8e52599d317c963287abee1eb4bfecbeeb318cf434ff226"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Chất</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1556225494-31071a392262?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/free-vector/flat-tanabata-background-with-city-bamboo_23-2149432013.jpg?w=996&t=st=1670386090~exp=1670386690~hmac=fe5a627ec0a6bc0011b7a4b5a0b19c0c6ad99713386b3a4781b55d4a92eb2c91"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Tuyệt Đẹp</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1527428050273-21bd264db1b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+            src="https://img.freepik.com/free-vector/flat-international-cat-day-background_23-2149484383.jpg?w=996&t=st=1670386105~exp=1670386705~hmac=cc9d50f14f2927cec162a42d3c68a8e41da2c0ffe942173341b61f2f92306afd"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Sống Động</p>

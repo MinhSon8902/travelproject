@@ -24,6 +24,9 @@ $rows = $querysearch->rowCount();
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Package List</title>
+  <link rel="shortcut icon"
+    href="https://cdn-icons-png.flaticon.com/512/1257/1257385.png?w=740&t=st=1670319127~exp=1670319727~hmac=3df5cfb7b4b4084477c31021f476ce730b54abf3c78aacf2ff06db0c21295839"
+    type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -55,35 +58,35 @@ $rows = $querysearch->rowCount();
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1556225494-9255d866700e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            src="https://img.freepik.com/free-vector/macau-china-skyline-with-panorama-sky-background-vector-illustration-business-travel-tourism-concept-with-modern-buildings-image-presentation-banner-web-site_596401-36.jpg?w=1380&t=st=1670385855~exp=1670386455~hmac=4d8c69b8d2b9099766b2c6bad55e4703038a18b5103d562204d662bd84215199"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Du lịch toàn cầu</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1561350409-e16d46acca4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/free-vector/beijing-skyline-vector-illustration-flat-style_596401-111.jpg?w=1380&t=st=1670385865~exp=1670386465~hmac=eff5f1618ea65bb45c7cd2d59ac58f26eebe55f727c2c5b8ef1ef16500da19df"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Mọi địa điểm trên thế giới</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1564525449886-25b4d9643b11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/free-vector/korea-travel-composition-flat_98292-3509.jpg?w=740&t=st=1670385884~exp=1670386484~hmac=254e5826c8cef6ebd9d66397b469b65747532f09615609aee87e5d8c8887219a"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Giá thành rẻ</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1556225494-31071a392262?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/free-vector/tourists-flight-travel-infographics-with-world-map-landmarks-icons_1284-52994.jpg?w=996&t=st=1670385935~exp=1670386535~hmac=f7c34ae93a1ce565a4a79bf03cec1c7ae60b4bff17c53bf2e8d22b3ee2d625db"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Cảnh đẹp tuyệt vời</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1527428050273-21bd264db1b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+            src="https://img.freepik.com/free-vector/earth-globe-airplane_1308-28892.jpg?w=1380&t=st=1670385922~exp=1670386522~hmac=aa55cacfa549b03c75dd8d9faab5ed8773ff0d4d399a3fc33b40ee0e3996c864"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Ninh Bình</p>

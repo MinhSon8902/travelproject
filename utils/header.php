@@ -3,8 +3,9 @@
 <div class="header-top">
   <div class="header-top__container">
     <ul class="header-top__list">
-      <li class="header-top__item"><a href="index.php" class="header-top__link"><i
-            class="fa-solid fa-house-chimney"></i></a>
+      <li class="header-top__item"><a href="index.php" class="header-top__link"><img
+            src="https://cdn-icons-png.flaticon.com/512/1257/1257385.png?w=740&t=st=1670319127~exp=1670319727~hmac=3df5cfb7b4b4084477c31021f476ce730b54abf3c78aacf2ff06db0c21295839"
+            alt="Logo" class="logo"></a>
       </li>
       <li class="header-top__item"><a href="profile.php" class="header-top__link">My Profile</a></li>
       <li class="header-top__item"><a href="change-password.php" class="header-top__link">Change Password</a></li>
@@ -12,7 +13,7 @@
       <li class="header-top__item"><a href="issuetickets.php" class="header-top__link">Issue Tickets</a></li>
     </ul>
     <ul class="header-info">
-      <li class="header-top__item">HELLO: </li>
+      <li class="header-top__item">XIN CHAO: </li>
       <li class="header-top__item"><?php echo htmlentities($_SESSION['login']);?></li>
       <li class="header-top__item"><a href="logout.php">Logout</a></li>
     </ul>

@@ -39,6 +39,9 @@ $error="Something went wrong. Please try again";
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Package Details</title>
+  <link rel="shortcut icon"
+    href="https://cdn-icons-png.flaticon.com/512/1257/1257385.png?w=740&t=st=1670319127~exp=1670319727~hmac=3df5cfb7b4b4084477c31021f476ce730b54abf3c78aacf2ff06db0c21295839"
+    type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -71,7 +74,7 @@ $error="Something went wrong. Please try again";
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1556225494-9255d866700e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            src="https://img.freepik.com/free-vector/empty-nature-beach-ocean-coastal-landscape_1308-32585.jpg?w=1380&t=st=1670385769~exp=1670386369~hmac=af1716d3ab970c989a1df7c29c7c7df8122246be65dd88e2e564bf3503f1e50c"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Giá Thành Rẻ</p>
@@ -84,22 +87,21 @@ $error="Something went wrong. Please try again";
           <p class="swiper-desc">Chuyến đi nhanh chóng</p>
         </div>
         <div class="swiper-slide">
-          <img
-            src="https://images.unsplash.com/photo-1564525449886-25b4d9643b11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          <img src="https://img.freepik.com/premium-vector/illustration-singapore-city-skyline_249011-976.jpg?w=996"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Hạnh phúc</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1556225494-31071a392262?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="https://img.freepik.com/free-vector/flat-singapore-national-day-illustration_52683-65933.jpg?w=1380&t=st=1670385794~exp=1670386394~hmac=54fbf80f9421c95a14d213fa50f22784a3ec3e1aa27a536298f39b5efa57a887"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Tiện Lợi</p>
         </div>
         <div class="swiper-slide">
           <img
-            src="https://images.unsplash.com/photo-1527428050273-21bd264db1b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+            src="https://img.freepik.com/free-vector/thailand-cities-skyline-silhouette-vector-illustration-white-background-business-travel-tourism-concept-with-famous-thailand-landmarks-image-presentation-banner-web-site_596401-497.jpg?w=1380&t=st=1670385823~exp=1670386423~hmac=b8ada78cb2cc2590b6dd883a9dfac6bd5132f12e74b8cc15623d889787e3aa91"
             alt="" />
           <h3 class="swiper-title">Data Travel</h3>
           <p class="swiper-desc">Good</p>

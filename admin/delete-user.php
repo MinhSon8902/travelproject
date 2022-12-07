@@ -7,11 +7,10 @@ include('utils/config.php');
  $query = $dbh -> prepare($sql);
  $query -> bindParam(':uid', $uid, PDO::PARAM_STR);
  if( $query->execute()){
-  // echo "<script type='text/javascript'> alert('Xóa Thành Công'); </script>";
   $_SESSION['notideleteus'] = "Bạn đã xóa tài khoản thành công";
   echo "<script type='text/javascript'> document.location = 'manage-users.php'; </script>";
  }
  else{
-  $_SESSION['notideleteuser'] = "Bạn không xóa tài khoản";
+  $_SESSION['notideleteuser'] = "Bạn đã xóa tài khoản thất bại";
  }
 ?>
