@@ -108,7 +108,7 @@ else{
             </tr>
             <?php 
 
-$uemail=$_SESSION['login'];;
+$uemail=$_SESSION['login'];
 $sql = "SELECT * from tblissues where UserEmail=:uemail";
 $query = $dbh->prepare($sql);
 $query -> bindParam(':uemail', $uemail, PDO::PARAM_STR);

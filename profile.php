@@ -137,7 +137,7 @@ foreach($results as $result)
           </div>
           <div class="form-group">
             <label for="" class="form-label">Password: </label>
-            <input type="text" name="mobile" id="mobile" class="form-input"
+            <input type="text" name="password" id="password" class="form-input"
               value="<?php echo htmlentities($result->Password);?>" readonly>
           </div>
           <div class="form-group">

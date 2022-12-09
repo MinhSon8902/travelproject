@@ -126,7 +126,7 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
             <i class="fa-regular fa-eye"></i> -->
           </div>
           <div class="form-group">
-            <a href="../forgot-password.php" class="form-group__link">Forgot your password?</a>
+            <a href="#" class="form-group__link">Forgot your password?</a>
           </div>
           <button type="submit" class="form-submit" name="form-submit">Sign in</button>
         </form>
