@@ -3,39 +3,43 @@ session_start();
 error_reporting(0);
 include('utils/config.php');
 if(strlen($_SESSION['alogin'])==0)
-	{	
+{	
 header('location:index-staff.php');
 }
 else{
 if(isset($_POST['submit']))
 {
-$pname=$_POST['packagename'];
-$ptype=$_POST['packagetype'];	
-$plocation=$_POST['packagelocation'];
-$pprice=$_POST['packageprice'];	
-$pfeatures=$_POST['packagefeatures'];
-$pdetails=$_POST['packagedetails'];	
-$pimage=$_FILES["packageimage"]["name"];
-move_uploaded_file($_FILES["packageimage"]["tmp_name"],"packageimages/".$_FILES["packageimage"]["name"]);
-$sql="INSERT INTO TblTourPackages(PackageName,PackageType,PackageLocation,PackagePrice,PackageFetures,PackageDetails,PackageImage) VALUES(:pname,:ptype,:plocation,:pprice,:pfeatures,:pdetails,:pimage)";
-$query = $dbh->prepare($sql);
-$query->bindParam(':pname',$pname,PDO::PARAM_STR);
-$query->bindParam(':ptype',$ptype,PDO::PARAM_STR);
-$query->bindParam(':plocation',$plocation,PDO::PARAM_STR);
-$query->bindParam(':pprice',$pprice,PDO::PARAM_STR);
-$query->bindParam(':pfeatures',$pfeatures,PDO::PARAM_STR);
-$query->bindParam(':pdetails',$pdetails,PDO::PARAM_STR);
-$query->bindParam(':pimage',$pimage,PDO::PARAM_STR);
-$query->execute();
-$lastInsertId = $dbh->lastInsertId();
-if($lastInsertId)
-{
-$msg="Package Created Successfully";
-}
-else 
-{
-$error="Something went wrong. Please try again";
-}
+$pname=$_POST['fullname'];
+$pmobile=$_POST['mobile'];	
+$pusername=$_POST['username'];
+$ppassword=$_POST['password'];	
+$pinputrole=$_POST['inputrole'];
+$con ="SELECT UserName FROM tblstaff WHERE UserName=:pusername";
+  $check = $dbh -> prepare($con);
+  $check-> bindParam(':pusername', $pusername, PDO::PARAM_STR);
+  $check-> execute();
+  if ($check -> rowCount() > 0 || empty($pusername)) {
+    $error="Username đã trùng trong cơ sở dữ liệu";
+  }
+  else {
+    $sql="INSERT INTO tblstaff(FullName,MobileNumber,UserName,Password,role) VALUES(:pname,:pmobile,:pusername,:ppassword,:pinputrole)";
+    $query = $dbh->prepare($sql);
+    $query->bindParam(':pname',$pname,PDO::PARAM_STR);
+    $query->bindParam(':pmobile',$pmobile,PDO::PARAM_STR);
+    $query-> bindParam(':pusername', $pusername, PDO::PARAM_STR);
+    $query->bindParam(':ppassword',$ppassword,PDO::PARAM_STR);
+    $query->bindParam(':pinputrole',$pinputrole,PDO::PARAM_STR);
+    $query->execute();
+    $lastInsertId = $dbh->lastInsertId();
+    if($lastInsertId)
+    {
+    $msg="Account Staff Created Successfully";
+    }
+    else 
+    {
+    $error="Something went wrong. Please try again";
+    }
+  }  
 }
 ?>
 
@@ -77,7 +81,7 @@ $error="Something went wrong. Please try again";
           </div>
         </div>
         <div class="main-content">
-          <h3 class="main-heading">Create Package</h3>
+          <h3 class="main-heading">Create Account Staff</h3>
           <?php if($error){?><div class="notify notify--error">
             <strong>ERROR</strong>:<?php echo htmlentities($error); ?>
           </div><?php } 
@@ -87,41 +91,37 @@ $error="Something went wrong. Please try again";
             <form class="form-control" name="package" action="" method="post" enctype="multipart/form-data">
               <div class="form-row">
                 <div class="form-group form-column">
-                  <label for="packagename" class="form-label">Package Name</label>
-                  <input type="text" class="form-input" name="packagename" id="packagename" placeholder="Create Package"
+                  <label for="fullname" class="form-label">Full Name</label>
+                  <input type="text" class="form-input" name="fullname" id="fullname" placeholder="Create User"
                     required>
                 </div>
                 <div class="form-group form-column">
-                  <label for="packagetype" class="form-label">Package Type</label>
-                  <input type="text" class="form-input" name="packagetype" id="packagetype" placeholder="Package Type"
+                  <label for="mobile" class="form-label">Mobile</label>
+                  <input type="text" class="form-input" name="mobile" id="mobile" placeholder="Mobile"
                     required>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group form-column">
-                  <label for="packagelocation" class="form-label">Package Location</label>
-                  <input type="text" class="form-input" name="packagelocation" id="packagelocation"
-                    placeholder="Package Location" required>
+                  <label for="username" class="form-label">UserName</label>
+                  <input type="text" class="form-input" name="username" id="username"
+                    placeholder="UserName" required>
                 </div>
                 <div class="form-group form-column">
-                  <label for="packageprice" class="form-label">Package Price in USD</label>
-                  <input type="text" class="form-input" name="packageprice" id="packageprice"
-                    placeholder="Package Price is USD" required>
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" name="password" id="password" placeholder="Password" required>
                 </div>
               </div>
               <div class="form-group">
-                <label for="" class="form-label">Package Features</label>
-                <input type="text" class="form-input" name="packagefeatures" id="packagefeatures"
-                  placeholder="Package Features" required>
-              </div>
-              <div class="form-group">
-                <label for="packagedetails" class="form-label">Package Details</label>
-                <textarea name="packagedetails" id="packagedetails" rows="10" placeholder="Package Details"></textarea>
-              </div>
-              <div class="form-group form-file">
-                <label for="packageimage" class="form-label"><i class="fa-solid fa-upload"></i></label>
-                <input type="file" class="form-input" name="packageimage" id="packageimage" required>
-              </div>
+                <label for="inputrole" class="form-label">Role</label>
+                <select id="inputrole" name="inputrole" style="border: 1px solid #ccc; padding: 5px; border-radius: 5px;" required>
+                  <option value="" disabled selected>Chọn Role</option>
+                  <option value="0">Nhân Viên Quản Lý</option>
+                  <option value="1">Nhân Viên Chăm Sóc Khách Hàng</option>
+                  <option value="2">Nhân Viên Thống Kê</option>
+                  <option value="3">Nhân Viên Page</option>
+                </select>
+              </div>                  
               <div class="form-group form-btn">
                 <button type="submit" name="submit" class="btn--primary btn">Create</button>
                 <button type="reset" class="btn--inverse btn">Reset</button>

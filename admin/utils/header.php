@@ -24,12 +24,12 @@
       <i class="fa-solid fa-user-gear"></i>
       <div class="header-info">
         <p class="header-info__title">Welcome</p>
-        <span class="header-info__name">Administrator</span>
+        <span class="header-info__name"><?php echo htmlentities($_SESSION['alogin']);?></span>
       </div>
       <i class="fa-solid fa-chevron-down"></i>
       <!-- <i class="fa-solid fa-chevron-up"></i> -->
       <ul class="header-dropdown">
-        <li class="header-dropdown__item"> <a href="change-password.php" class="header-dropdown__link"><i
+        <li class="header-dropdown__item"> <a href="change-password-acc.php" class="header-dropdown__link"><i
               class="fa-regular fa-address-card header-dropdown__icon"></i>Profile</a> </li>
         <li class="header-dropdown__item"> <a href="logout.php" class="header-dropdown__link"><i
               class="fa-solid fa-arrow-right-from-bracket header-dropdown__icon"></i>Logout</a> </li>

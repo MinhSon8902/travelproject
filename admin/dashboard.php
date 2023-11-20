@@ -3,7 +3,7 @@ session_start();
 include('utils/config.php');
 if(strlen($_SESSION['alogin'])==0)
 	{	
-header('location:index.php');
+header('location:index-staff.php');
 }
 else{
 ?>
@@ -52,6 +52,19 @@ else{
               <div class="main-item__content">
                 <h3 class="main-title">User</h3>
                 <?php $sql = "SELECT id from tblusers";
+                    $query = $dbh -> prepare($sql);
+                    $query->execute();
+                    $results=$query->fetchAll(PDO::FETCH_OBJ);
+                    $cnt=$query->rowCount();
+					        ?>
+                <span class="main-total"><?php echo htmlentities($cnt);?> </span>
+              </div>
+            </div>
+            <div class="main-item">
+              <i class="fa-solid fa-person"></i>
+              <div class="main-item__content">
+                <h3 class="main-title">Staff</h3>
+                <?php $sql = "SELECT id from tblstaff";
                     $query = $dbh -> prepare($sql);
                     $query->execute();
                     $results=$query->fetchAll(PDO::FETCH_OBJ);

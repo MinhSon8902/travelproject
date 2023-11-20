@@ -3,17 +3,39 @@ session_start();
 error_reporting(0);
 include('utils/config.php');
 $key='';
+
+$columns = [
+  'sidetrips' => '1',
+  'mytrips' => '1',
+];
+
+$conditions = [];
+
+foreach ($columns as $inputName => $columnName) {
+  if (isset($_POST[$inputName]) && $_POST[$inputName] == 'on') {
+    $conditions[] = "tblcategory.categoryId = $columnName";
+  }
+}
 if(isset($_POST['submitsearch']))
 {
 $type = 'search';
 $key=$_POST['search'];
-$sql ="SELECT * FROM tbltourpackages WHERE PackageName LIKE :keyword OR PackageType LIKE :keyword	OR PackageLocation LIKE :keyword ORDER BY PackageName" ;
+// $sql ="SELECT * FROM tbltourpackages,tblcategory WHERE tbltourpackages.PackageId = tblcategory.PackageId AND PackageName LIKE :keyword OR PackageType LIKE :keyword	OR PackageLocation LIKE :keyword OR " ;
+$sql ="SELECT * FROM tbltourpackages,tblcategory WHERE tbltourpackages.PackageId = tblcategory.PackageId AND PackageName LIKE :keyword OR " ;
+if (!empty($conditions)) {
+  $sql .= implode(' OR ', $conditions);
+}
 $querysearch = $dbh->prepare($sql);
 $querysearch->bindValue(':keyword','%'.$key.'%',PDO::PARAM_STR);
 $querysearch->execute();
 $resultsearch=$querysearch->fetchAll(PDO::FETCH_OBJ);
 $rows = $querysearch->rowCount();
+var_dump(count($resultsearch));
+echo $sql;
 }
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -292,9 +314,6 @@ $rows = $querysearch->rowCount();
                 </span>
                 <input type="text" id="search-locate" name="search" placeholder="Search location or property"
                   value="<?php echo $key;?>" />
-                <button type="submit" name="submitsearch" class="btn" style="margin-top: 20px;">Search</button>
-              </form>
-              <div class="main-group">
                 <div class="main-item checkbox">
                   <input type="checkbox" name="sidetrips" id="sidetrips" class="checkbox__input" />
                   <label for="sidetrips" class="main-text checkbox__label">Show side trips</label>
@@ -303,6 +322,18 @@ $rows = $querysearch->rowCount();
                   <input type="checkbox" name="mytrips" id="mytrips" class="checkbox__input" />
                   <label for="mytrips" class="main-text checkbox__label">Show items in my trips</label>
                 </div>
+                <button type="submit" name="submitsearch" class="btn" style="margin-top: 20px;">Search</button>
+              </form>
+              <div class="main-group">
+                <div> Hello <?php print_r($conditions); ?></div>
+                <!-- <div class="main-item checkbox">
+                  <input type="checkbox" name="sidetrips" id="sidetrips" class="checkbox__input" />
+                  <label for="sidetrips" class="main-text checkbox__label">Show side trips</label>
+                </div>
+                <div class="main-item checkbox">
+                  <input type="checkbox" name="mytrips" id="mytrips" class="checkbox__input" />
+                  <label for="mytrips" class="main-text checkbox__label">Show items in my trips</label>
+                </div> -->
               </div>
               <div class="checkbox-category">
                 <span class="main-text main-text--big">Activity type</span>

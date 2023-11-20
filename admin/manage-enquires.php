@@ -4,7 +4,7 @@ error_reporting(0);
 include('utils/config.php');
 if(strlen($_SESSION['alogin'])==0)
 	{	
-header('location:index.php');
+header('location:index-staff.php');
 }
 else{ 
 if(isset($_REQUEST['eid']))
@@ -25,7 +25,7 @@ $msg="Enquiry  successfully read";
 <html>
 
 <head>
-  <title>Travel Admin manage Users</title>
+  <title>Travel Admin Manage Enquiry</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="shortcut icon"

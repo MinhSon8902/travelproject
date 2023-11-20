@@ -167,6 +167,21 @@
 .navbar-menu__item:nth-child(2) > a > span {
   margin-inline: 14px;
 }
+.navbar-menu__item:nth-child(3) {
+  position: relative;
+}
+.navbar-menu__item:nth-child(3) > .navbar-menu__link > span ~ i {
+  margin-left: 10px;
+}
+.navbar-menu__item:nth-child(3):hover .navbar-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s linear;
+  z-index: 999;
+}
+.navbar-menu__item:nth-child(3) > a > span {
+  margin-inline: 14px;
+}
 .navbar-menu__item:hover {
   border-left-color: rgba(0, 0, 255, 0.185);
 }
@@ -205,6 +220,11 @@
   color: #3d474d;
   font-size: 19px;
   font-family: "Noto Sans", sans-serif;
+}
+
+.enable-button {
+  background-color: red !important;
+  pointer-events: none;
 }
 
 .footer {

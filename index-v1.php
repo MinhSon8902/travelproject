@@ -3,17 +3,42 @@ session_start();
 error_reporting(0);
 include('utils/config.php');
 $key='';
-if(isset($_POST['submitsearch']))
-{
-$type = 'search';
-$key=$_POST['search'];
-$sql ="SELECT * FROM tbltourpackages WHERE PackageName LIKE :keyword OR PackageType LIKE :keyword	OR PackageLocation LIKE :keyword ORDER BY PackageName" ;
-$querysearch = $dbh->prepare($sql);
-$querysearch->bindValue(':keyword','%'.$key.'%',PDO::PARAM_STR);
-$querysearch->execute();
-$resultsearch=$querysearch->fetchAll(PDO::FETCH_OBJ);
-$rows = $querysearch->rowCount();
+$columns = [
+  'sidetrips' => 'a',
+  'mytrips' => 'b',
+];
+
+$conditions = [];
+$conditions[] = "1";
+// echo $conditions;
+
+foreach ($columns as $inputName => $columnName) {
+  if (isset($_POST[$inputName]) && $_POST[$inputName] == 'on') {
+    $conditions[] = "$columnName = 1";
+  }
 }
+
+$key = $_POST['search'];
+if (!empty($key)) {
+    $conditions[] = "PackageName LIKE :keyword OR PackageType LIKE :keyword	OR PackageLocation LIKE :keyword ORDER BY PackageName";
+}
+
+$sql = "SELECT * FROM tbltourpackages";
+if (!empty($conditions)) {
+    $sql .= " WHERE " . implode(" AND ", $conditions);
+}
+
+  $sql .= " AND tbltourpackages.PackageId = tblcategory.PackageId";
+
+  $querysearch = $dbh->prepare($sql);
+  if (!empty($key)) {
+    $querysearch->bindValue(':keyword','%'.$key.'%',PDO::PARAM_STR);
+  }
+
+  $querysearch->execute();
+  $resultsearch=$querysearch->fetchAll(PDO::FETCH_OBJ);
+  $rows = $querysearch->rowCount();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -294,9 +319,10 @@ $rows = $querysearch->rowCount();
                   value="<?php echo $key;?>" />
                 <button type="submit" name="submitsearch" class="btn" style="margin-top: 20px;">Search</button>
               </form>
+              <div> Hello <?php echo $conditions; ?></div>
               <div class="main-group">
                 <div class="main-item checkbox">
-                  <input type="checkbox" name="sidetrips" id="sidetrips" class="checkbox__input" />
+                  <input type="checkbox" name="sidetrips" id="sidetrips" class="checkbox__input" checked />
                   <label for="sidetrips" class="main-text checkbox__label">Show side trips</label>
                 </div>
                 <div class="main-item checkbox">

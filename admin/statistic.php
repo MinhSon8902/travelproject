@@ -4,7 +4,7 @@ error_reporting(0);
 include('utils/config.php');
 if(strlen($_SESSION['alogin'])==0)
 	{	
-header('location:index.php');
+header('location:index-staff.php');
 }
 else{ 
   function calcDate($startday,$endday){

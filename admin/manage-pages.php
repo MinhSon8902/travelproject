@@ -4,7 +4,7 @@ error_reporting(0);
 include('utils/config.php');
 if(strlen($_SESSION['alogin'])==0)
 	{	
-header('location:index.php');
+header('location:index-staff.php');
 }
 else{
 if($_POST['submit']=="Update")
@@ -26,7 +26,7 @@ $msg="Page data updated successfully";
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manage Page</title>
+  <title>Travel Admin Manage Page</title>
   <link rel="shortcut icon"
     href="https://cdn-icons-png.flaticon.com/512/1257/1257385.png?w=740&t=st=1670319127~exp=1670319727~hmac=3df5cfb7b4b4084477c31021f476ce730b54abf3c78aacf2ff06db0c21295839"
     type="image/x-icon">

@@ -12,7 +12,7 @@ else{
 <html>
 
 <head>
-  <title>Travel Admin Manage Users</title>
+  <title>Manager-Package</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="shortcut icon"
@@ -40,44 +40,52 @@ else{
     </div>
     <div class="main-right">
       <div class="main-navigation">
-        <div class="main-navigation__item"><a href="dashboard.php">Home</a><i class="fa-solid fa-chevron-right"></i>Manage
-          Users
+        <div class="main-navigation__item"><a href="dashboard.php">Home</a><i class="fa-solid fa-chevron-right"></i>Manager
+          Account
         </div>
       </div>
       <div class="main-content">
-        <h3 class="main-heading">Manage Users</h3>
+        <h3 class="main-heading">Manage Account</h3>
         <div class="sticky-table">
           <table id="table">
             <thead>
               <tr>
-                <th>#</th>
+              <th>#</th>
                 <th>Name</th>
                 <th>Mobile No.</th>
-                <th>Email Id</th>
-                <th>RegDate </th>
+                <th>UserName </th>
+                <th>Role</th>
                 <th>Updation Date</th>
                 <th>Action</th>
+                <th>Careful</th>
               </tr>
             </thead>
             <tbody>
-              <?php $sql = "SELECT * from tblusers";
-$query = $dbh -> prepare($sql);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$cnt=1;
-if($query->rowCount() > 0)
-{
-foreach($results as $result)
-{				?>
+              <?php $sql = "SELECT * from tblstaff";
+          $query = $dbh -> prepare($sql);
+          $query->execute();
+          $results=$query->fetchAll(PDO::FETCH_OBJ);
+          $cnt=1;
+          if($query->rowCount() > 0)
+          {
+          foreach($results as $result)
+          {				?>
               <tr>
                 <td><?php echo htmlentities($cnt);?></td>
                 <td><?php echo htmlentities($result->FullName);?></td>
                 <td><?php echo htmlentities($result->MobileNumber);?></td>
-                <td><?php echo htmlentities($result->EmailId);?></td>
-                <td><?php echo htmlentities($result->RegDate);?></td>
-                <td><?php echo htmlentities($result->UpdationDate);?></td>
+                <td><?php echo htmlentities($result->UserName);?></td>
+                <td>
+                  <?php if ($result->role == 0) echo "Nhân Viên Quản Lý"?>
+                  <?php if ($result->role == 1) echo "Nhân Viên Chăm Sóc"?>
+                  <?php if ($result->role == 2) echo "Nhân Viên Thống Kê"?>
+                  <?php if ($result->role == 3) echo "Nhân Viên Page"?>
+                  </td>
+                <td><?php echo htmlentities($result->updationDate);?></td>
+                <td><a href="update-account.php?pid=<?php echo htmlentities($result->id);?>">
+                    <button type="button" class="btn btn--primary">View Details</button></a></td>
                 <td><a onclick='return confirm("Bạn có muốn xóa không ?");'
-                    href="delete-user.php?uid=<?php echo htmlentities($result->id);?>">
+                    href="delete-account.php?gid=<?php echo htmlentities($result->id);?>">
                     <button type="button" class="btn btn--danger">Delete</button></a></td>
               </tr>
               <?php $cnt=$cnt+1;}
@@ -132,11 +140,11 @@ foreach($results as $result)
     },
   }
   <?php $noti = 'Website còn nhiều sai sót. Mong mọi người phản hồi lại để chúng tôi phát triển hơn'; ?>
-  <?php if(isset($_SESSION['notideleteus'])) {?>
-  toast.success("<?php echo $_SESSION['notideleteus'];?>");
-  <?php unset($_SESSION['notideleteus']); } else if(isset($_SESSION['notideleteuser'])) {?>
-  toast.error("<?php echo $_SESSION['notideleteuser'];?> ");
-  <?php unset($_SESSION['notideleteuser']);} else {?>
+  <?php if(isset($_SESSION['notidelete'])) {?>
+  toast.success("<?php echo $_SESSION['notidelete'];?>");
+  <?php unset($_SESSION['notidelete']);} else if(isset($_SESSION['notideleteer'])) {?>
+  toast.error("<?php echo $_SESSION['notideleteer'];?> ");
+  <?php unset($_SESSION['notideleteer']);} else {?>
   toast.info("<?php echo $noti;?> ");
   <?php }?>
   </script>

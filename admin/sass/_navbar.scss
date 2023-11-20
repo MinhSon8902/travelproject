@@ -1,12 +1,6 @@
 @import url(./utils.scss);
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600&display=swap');
 .navbar {
-  // position: fixed;
-  // top: 125px;
-  // bottom: 0;
-  // left: 0;
-  // width: calc(20% - 5px);
-  // z-index: 999;
   padding-top: 20px;
   padding-bottom: 20px;
   border: 1px solid #e4e6e7;
@@ -20,7 +14,7 @@
     &__link {
       color: #3d474d;
       font-size: 19px;
-      font-family: "Noto Sans", sans-serif;
+      font-family: 'Noto Sans', sans-serif;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -39,6 +33,21 @@
       border-left: 3px solid transparent;
       transition: all 0.5s linear;
       &:nth-child(2) {
+        position: relative;
+        & > .navbar-menu__link > span ~ i {
+          margin-left: 10px;
+        }
+        &:hover .navbar-dropdown {
+          opacity: 1;
+          visibility: visible;
+          transition: all 0.3s linear;
+          z-index: 999;
+        }
+        & > a > span {
+          margin-inline: 14px;
+        }
+      }
+      &:nth-child(3) {
         position: relative;
         & > .navbar-menu__link > span ~ i {
           margin-left: 10px;
@@ -94,7 +103,12 @@
       display: inline-block;
       color: #3d474d;
       font-size: 19px;
-      font-family: "Noto Sans", sans-serif;
+      font-family: 'Noto Sans', sans-serif;
     }
   }
+}
+
+.enable-button {
+  background-color: red !important;
+  pointer-events: none;
 }

@@ -10,31 +10,28 @@ else{
 $pid=intval($_GET['pid']);	
 if(isset($_POST['submit']))
 {
-$pname=$_POST['packagename'];
-$ptype=$_POST['packagetype'];	
-$plocation=$_POST['packagelocation'];
-$pprice=$_POST['packageprice'];	
-$pfeatures=$_POST['packagefeatures'];
-$pdetails=$_POST['packagedetails'];	
-$pimage=$_FILES["packageimage"]["name"];
-$sql="update TblTourPackages set PackageName=:pname,PackageType=:ptype,PackageLocation=:plocation,PackagePrice=:pprice,PackageFetures=:pfeatures,PackageDetails=:pdetails where PackageId=:pid";
+$pname=$_POST['fullname'];
+$pmobile=$_POST['mobile'];	
+$pusername=$_POST['username'];
+$pinputrole=$_POST['inputrole'];
+$ppassword=$_POST['password'];
+$sql="update tblstaff set FullName=:pname,MobileNumber=:pmobile,UserName=:pusername,role=:pinputrole,password=:ppassword where id=:pid";
 $query = $dbh->prepare($sql);
 $query->bindParam(':pname',$pname,PDO::PARAM_STR);
-$query->bindParam(':ptype',$ptype,PDO::PARAM_STR);
-$query->bindParam(':plocation',$plocation,PDO::PARAM_STR);
-$query->bindParam(':pprice',$pprice,PDO::PARAM_STR);
-$query->bindParam(':pfeatures',$pfeatures,PDO::PARAM_STR);
-$query->bindParam(':pdetails',$pdetails,PDO::PARAM_STR);
+$query->bindParam(':pmobile',$pmobile,PDO::PARAM_STR);
+$query->bindParam(':pusername',$pusername,PDO::PARAM_STR);
+$query->bindParam(':pinputrole',$pinputrole,PDO::PARAM_STR);
+$query->bindParam(':ppassword',$ppassword,PDO::PARAM_STR);
 $query->bindParam(':pid',$pid,PDO::PARAM_STR);
 $query->execute();
-$msg="Package Updated Successfully";
+$msg="Account Updated Successfully";
 }
 	?>
 <!DOCTYPE HTML>
 <html>
 
 <head>
-  <title>Travel Admin Package Creation</title>
+  <title>Travel Admin Update Account</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -64,11 +61,11 @@ $msg="Package Updated Successfully";
     <div class="main-right">
       <div class="main-navigation">
         <div class="main-navigation__item"><a href="dashboard.php">Home</a><i class="fa-solid fa-chevron-right"></i>Update
-          Packages
+          Account
         </div>
       </div>
       <div class="main-content">
-        <h3 class="main-heading">Update Package</h3>
+        <h3 class="main-heading">Update Account</h3>
         <?php if($error){?><div class="notify notify--error">
           <strong>ERROR</strong>:<?php echo htmlentities($error); ?>
         </div><?php } 
@@ -78,7 +75,7 @@ $msg="Package Updated Successfully";
         <div class="main-form">
           <?php 
 $pid=intval($_GET['pid']);
-$sql = "SELECT * from TblTourPackages where PackageId=:pid";
+$sql = "SELECT * from tblstaff where id=:pid";
 $query = $dbh -> prepare($sql);
 $query -> bindParam(':pid', $pid, PDO::PARAM_STR);
 $query->execute();
@@ -90,49 +87,42 @@ foreach($results as $result)
           <form class="form-control" name="package" action="" method="post" enctype="multipart/form-data">
             <div class="form-row">
               <div class="form-group form-column">
-                <label for="packagename" class="form-label">Package Name</label>
-                <input type="text" class="form-input" name="packagename" id="packagename" placeholder="Create Package"
-                  value="<?php echo htmlentities($result->PackageName);?>" required>
+              <label for="fullname" class="form-label">Full Name</label>
+                  <input type="text" class="form-input" name="fullname" id="fullname" placeholder="Create User"
+                  value="<?php echo htmlentities($result->FullName);?>" required>
               </div>
               <div class="form-group form-column">
-                <label for="packagetype" class="form-label">Package Type</label>
-                <input type="text" class="form-input" name="packagetype" id="packagetype" placeholder="Package Type"
-                  value="<?php echo htmlentities($result->PackageType);?>" required>
+              <label for="mobile" class="form-label">Mobile</label>
+                  <input type="text" class="form-input" name="mobile" id="mobile" placeholder="Mobile"
+                  value="<?php echo htmlentities($result->MobileNumber);?>" required>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group form-column">
-                <label for="packagelocation" class="form-label">Package Location</label>
-                <input type="text" class="form-input" name="packagelocation" id="packagelocation"
-                  placeholder="Package Location" value="<?php echo htmlentities($result->PackageLocation);?>" required>
+              <label for="username" class="form-label">UserName</label>
+                  <input type="text" class="form-input" name="username" id="username"
+                    placeholder="UserName" value="<?php echo htmlentities($result->UserName);?>" required>
               </div>
               <div class="form-group form-column">
-                <label for="packageprice" class="form-label">Package Price in USD</label>
-                <input type="text" class="form-input" name="packageprice" id="packageprice"
-                  placeholder="Package Price is USD" value="<?php echo htmlentities($result->PackagePrice);?>" required>
+                <label for="inputrole" class="form-label">Role</label>
+                <select  id="inputrole" name="inputrole" style="border: 1px solid #ccc; padding: 5px; border-radius: 5px;" required>
+                    <option value="0" <?php if ($result->role == 0) echo "selected"; ?>>Nhân Viên Quản Lý</option>
+                    <option value="1" <?php if ($result->role == 1) echo "selected"; ?>>Nhân Viên Chăm Sóc Khách Hàng</option>
+                    <option value="2" <?php if ($result->role == 2) echo "selected"; ?>>Nhân Viên Thống Kê</option>
+                    <option value="3" <?php if ($result->role == 3) echo "selected"; ?>>Nhân Viên Page</option>
+                </select>
               </div>
             </div>
-            <div class="form-group">
-              <label for="" class="form-label">Package Features</label>
-              <input type="text" class="form-input" name="packagefeatures" id="packagefeatures"
-                placeholder="Package Features Eg-free Pickup-drop facility"
-                value="<?php echo htmlentities($result->PackageFetures);?>" required>
-            </div>
-            <div class="form-group">
-              <label for="packagedetails" class="form-label">Package Details</label>
-              <textarea name="packagedetails" id="packagedetails" rows="10"
-                placeholder="Package Details"><?php echo htmlentities($result->PackageDetails);?></textarea>
-            </div>
-            <div class="form-group form-group__img">
-              <img src="packageimages/<?php echo htmlentities($result->PackageImage);?>" width="200"
-                height="auto">&nbsp;&nbsp;&nbsp;<a class="form-group__changeImg"
-                href="change-image.php?imgid=<?php echo htmlentities($result->PackageId);?>">Change
-                Image</a>
-            </div>
+            <div class="form-row">
+              <div class="form-group">
+                  <label for="" class="form-label">Password: </label>
+                  <input type="text" name="password" id="password" class="form-input" placeholder="Password" value="<?php echo htmlentities($result->Password);?>" required>
+              </div>
+            </div>      
             <div class="form-group">
               <label for="" class="form-label">Last Updation Date</label>
               <div class="col-sm-8">
-                <?php echo htmlentities($result->UpdationDate);?>
+                <?php echo htmlentities($result->updationDate);?>
               </div>
             </div>
             <?php }} ?>

@@ -28,7 +28,7 @@ else {?>
         <li class="header-item"><a href="index.php" class=""> <img
               src="https://cdn-icons-png.flaticon.com/512/1257/1257385.png?w=740&t=st=1670319127~exp=1670319727~hmac=3df5cfb7b4b4084477c31021f476ce730b54abf3c78aacf2ff06db0c21295839"
               alt="Logo" class="logo"></a></li>
-        <li class="header-item"><a href="admin/index.php" class="header-link">
+        <li class="header-item"><a href="admin/index-staff.php" class="header-link">
             <svg width="25" height="25" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M11.2508 1.56265H4.74906C2.48331 1.56265 1.06281 3.1669 1.06281 5.43715V11.5632C1.06281 13.8334 2.47656 15.4377 4.74906 15.4377H11.2501C13.5233 15.4377 14.9378 13.8334 14.9378 11.5632V5.43715C14.9378 3.1669 13.5233 1.56265 11.2508 1.56265Z"
@@ -41,7 +41,7 @@ else {?>
               <path d="M9.63623 9.88877V8.49977" stroke="#131313" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
-            Login Admin
+            Login Manager
           </a></li>
       </ul>
       <ul class="header-list">
