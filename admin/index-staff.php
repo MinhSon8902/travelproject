@@ -14,9 +14,6 @@ $results=$query->fetchAll(PDO::FETCH_OBJ);
 if($query->rowCount() > 0)
 {
 $_SESSION['alogin']=$_POST['username'];
-  // foreach($results as $result){
-  //   $_SESSION['arole']=$result->role;
-  // }
 $_SESSION['arole'] = $results[0]->role;
 $_SESSION['notiadmin'] = 'Chào mừng ' . $_SESSION['alogin'] . ' đã đăng nhập trang quản lý';
 echo "<script type='text/javascript'> document.location = 'dashboard.php'; </script>";

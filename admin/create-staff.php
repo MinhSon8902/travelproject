@@ -116,10 +116,10 @@ $con ="SELECT UserName FROM tblstaff WHERE UserName=:pusername";
                 <label for="inputrole" class="form-label">Role</label>
                 <select id="inputrole" name="inputrole" style="border: 1px solid #ccc; padding: 5px; border-radius: 5px;" required>
                   <option value="" disabled selected>Chọn Role</option>
-                  <option value="0">Nhân Viên Quản Lý</option>
-                  <option value="1">Nhân Viên Chăm Sóc Khách Hàng</option>
-                  <option value="2">Nhân Viên Thống Kê</option>
-                  <option value="3">Nhân Viên Page</option>
+                  <!-- <option value="0">Quản Lý</option> -->
+                  <option value="1">Nhân Viên Quản Lý Website</option>
+                  <option value="2">Nhân Viên Chăm Sóc Khách Hàng</option>
+                  <option value="3">Nhân Viên Thống Kê</option>
                 </select>
               </div>                  
               <div class="form-group form-btn">
