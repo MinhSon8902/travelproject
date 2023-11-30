@@ -7,32 +7,47 @@ if(strlen($_SESSION['alogin'])==0)
 header('location:index-staff.php');
 }
 else{ 
-if(isset($_REQUEST['bkid']))
-	{
-$bid=intval($_GET['bkid']);
-$status=2;
-$cancelby='a';
-$sql = "UPDATE tblbooking SET status=:status,CancelledBy=:cancelby WHERE  BookingId=:bid";
-$query = $dbh->prepare($sql);
-$query -> bindParam(':status',$status, PDO::PARAM_STR);
-$query -> bindParam(':cancelby',$cancelby , PDO::PARAM_STR);
-$query-> bindParam(':bid',$bid, PDO::PARAM_STR);
-$query -> execute();
+  if(isset($_REQUEST['bkid']))
+  {
+      $bid=intval($_GET['bkid']);
+      $status=2;
+      $cancelby='a';
+      $idadmin = $_SESSION['alogin'];
+      $sql = "UPDATE tblbooking SET status=:status,CancelledBy=:cancelby WHERE  BookingId=:bid";
+      $query = $dbh->prepare($sql);
+      $query -> bindParam(':status',$status, PDO::PARAM_STR);
+      $query -> bindParam(':cancelby',$cancelby , PDO::PARAM_STR);
+      $query-> bindParam(':bid',$bid, PDO::PARAM_STR);
+      $query -> execute();
+  
+      $sql2 = "UPDATE tblacceptbooking SET idamin=:idamin WHERE idbooking=:bid";
+      $query2 = $dbh->prepare($sql2);
+      $query2 -> bindParam(':idamin',$idadmin, PDO::PARAM_STR);
+      $query2 -> bindParam(':bid',$bcid, PDO::PARAM_STR); 
+      $query2 -> execute();
 
-$msg="Booking Cancelled successfully";
-}
-if(isset($_REQUEST['bckid']))
-	{
-$bcid=intval($_GET['bckid']);
-$status=1;
-$cancelby='a';
-$sql = "UPDATE tblbooking SET status=:status WHERE BookingId=:bcid";
-$query = $dbh->prepare($sql);
-$query -> bindParam(':status',$status, PDO::PARAM_STR);
-$query-> bindParam(':bcid',$bcid, PDO::PARAM_STR);
-$query -> execute();
-$msg="Booking Confirm successfully";
-}
+      $msg="Booking Cancelled successfully";
+  }
+  
+  if(isset($_REQUEST['bckid']))
+  {
+      $bcid=intval($_GET['bckid']);
+      $status=1;
+      $cancelby='a';
+      $idadmin = $_SESSION['alogin'];
+      $sql = "UPDATE tblbooking SET status=:status WHERE BookingId=:bcid";
+      $query = $dbh->prepare($sql);
+      $query -> bindParam(':status',$status, PDO::PARAM_STR);
+      $query-> bindParam(':bcid',$bcid, PDO::PARAM_STR);
+      $query -> execute();
+      $sql2 = "UPDATE tblacceptbooking SET idamin=:idamin WHERE idbooking=:bid";
+      $query2 = $dbh->prepare($sql2);
+      $query2 -> bindParam(':idamin',$idadmin, PDO::PARAM_STR);
+      $query2 -> bindParam(':bid',$bcid, PDO::PARAM_STR); 
+      $query2 -> execute();
+      $msg="Booking Confirm successfully";
+  }
+  
 	?>
 <!DOCTYPE HTML>
 <html>
@@ -87,11 +102,12 @@ $msg="Booking Confirm successfully";
                 <th>From /To </th>
                 <th>Comment </th>
                 <th>Status </th>
+                <!-- <th>Staff Confirm </th> -->
                 <th>Action </th>
               </tr>
             </thead>
             <tbody>
-              <?php $sql = "SELECT tblbooking.BookingId as bookid,tblusers.FullName as fname,tblusers.MobileNumber as mnumber,tblusers.EmailId as email,tbltourpackages.PackageName as pckname,tblbooking.PackageId as pid,tblbooking.FromDate as fdate,tblbooking.ToDate as tdate,tblbooking.Comment as comment,tblbooking.status as status,tblbooking.CancelledBy as cancelby,tblbooking.UpdationDate as upddate from tblusers join  tblbooking on  tblbooking.UserEmail=tblusers.EmailId join tbltourpackages on tbltourpackages.PackageId=tblbooking.PackageId";
+              <?php $sql = "SELECT tblbooking.BookingId as bookid,tblusers.FullName as fname,tblusers.MobileNumber as mnumber,tblusers.EmailId as email,tbltourpackages.PackageName as pckname,tblbooking.PackageId as pid,tblbooking.FromDate as fdate,tblbooking.ToDate as tdate,tblbooking.Comment as comment,tblbooking.status as status,tblbooking.CancelledBy as cancelby,tblbooking.UpdationDate as upddate from tblusers join  tblbooking on  tblbooking.iduser=tblusers.id join tbltourpackages on tbltourpackages.PackageId=tblbooking.PackageId";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -128,7 +144,7 @@ echo "Canceled by user at " .$result->upddate;
 
 }
 ?></td>
-
+<!-- <td><?php echo htmlentities($result->fnameStaff);?></td> -->
                 <?php if($result->status==2)
 {
 	?><td>Cancelled</td>

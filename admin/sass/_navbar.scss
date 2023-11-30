@@ -32,36 +32,7 @@
       cursor: pointer;
       border-left: 3px solid transparent;
       transition: all 0.5s linear;
-      &:nth-child(2) {
-        position: relative;
-        & > .navbar-menu__link > span ~ i {
-          margin-left: 10px;
-        }
-        &:hover .navbar-dropdown {
-          opacity: 1;
-          visibility: visible;
-          transition: all 0.3s linear;
-          z-index: 999;
-        }
-        & > a > span {
-          margin-inline: 14px;
-        }
-      }
-      &:nth-child(3) {
-        position: relative;
-        & > .navbar-menu__link > span ~ i {
-          margin-left: 10px;
-        }
-        &:hover .navbar-dropdown {
-          opacity: 1;
-          visibility: visible;
-          transition: all 0.3s linear;
-          z-index: 999;
-        }
-        & > a > span {
-          margin-inline: 14px;
-        }
-      }
+
       &:hover {
         border-left-color: rgba(0, 0, 255, 0.185);
         .navbar-icon {
@@ -69,8 +40,38 @@
         }
         .navbar-menu__link {
           color: #000000;
-          // transition: all 0.7s linear;
+          transition: all 0.7s linear;
         }
+      }
+    }
+  }
+  &-advance {
+    position: relative;
+    & > .navbar-menu__link > span ~ i {
+      margin-left: 10px;
+    }
+    &:hover .navbar-dropdown {
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.3s linear;
+      z-index: 999;
+    }
+    & > a > span {
+      margin-inline: 14px;
+    }
+    &--staff {
+      position: relative;
+      & > .navbar-menu__link > span ~ i {
+        margin-left: 10px;
+      }
+      &:hover .navbar-dropdown {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.3s linear;
+        z-index: 999;
+      }
+      & > a > span {
+        margin-inline: 14px;
       }
     }
   }

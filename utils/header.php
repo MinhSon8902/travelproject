@@ -14,7 +14,7 @@
     </ul>
     <ul class="header-info">
       <li class="header-top__item">XIN CHAO: </li>
-      <li class="header-top__item"><?php echo htmlentities($_SESSION['login']);?></li>
+      <li class="header-top__item"><?php echo htmlentities($_SESSION['nameUser']);?></li>
       <li class="header-top__item"><a href="logout.php">Logout</a></li>
     </ul>
   </div>

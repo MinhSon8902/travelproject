@@ -4,7 +4,7 @@ if(isset($_POST['form-submit']))
 {
 $email=$_POST['email'];
 $password=$_POST['password'];
-$sql ="SELECT EmailId,Password FROM tblusers WHERE EmailId=:email and Password=:password";
+$sql ="SELECT id,FullName FROM tblusers WHERE EmailId=:email and Password=:password";
 $query= $dbh -> prepare($sql);
 $query-> bindParam(':email', $email, PDO::PARAM_STR);
 $query-> bindParam(':password', $password, PDO::PARAM_STR);
@@ -12,7 +12,8 @@ $query-> execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
 if($query->rowCount() > 0)
 {
-$_SESSION['login']=$_POST['email'];
+$_SESSION['login']=$results[0]->id;
+$_SESSION['nameUser']=$results[0]->FullName;
 $_SESSION['msgsssi']="Chào mừng bạn đã đến website của chúng tôi ";
 echo "<script type='text/javascript'> document.location = 'index.php'; </script>";
 } else{

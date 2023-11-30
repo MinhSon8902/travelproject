@@ -11,10 +11,12 @@ if($_POST['submit']=="Update")
 {
 	$pagetype=$_GET['type'];
 	$pagedetails=$_POST['packagedetails'];
-$sql = "UPDATE tblpages SET detail=:pagedetails WHERE type=:pagetype";
+  $idadmin = $_SESSION['alogin'];
+$sql = "UPDATE tblpages SET detail=:pagedetails, idadmin=:idadmin WHERE type=:pagetype";
 $query = $dbh->prepare($sql);
 $query -> bindParam(':pagetype',$pagetype, PDO::PARAM_STR);
 $query-> bindParam(':pagedetails',$pagedetails, PDO::PARAM_STR);
+$query-> bindParam(':idadmin',$idadmin, PDO::PARAM_STR);
 $query -> execute();
 $msg="Page data updated successfully";
 }

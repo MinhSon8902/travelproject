@@ -5,7 +5,7 @@ if(isset($_POST['form-submit']))
 {
 $uname=$_POST['username'];
 $password=$_POST['password'];
-$sql ="SELECT UserName,Password,role FROM tblstaff WHERE UserName=:uname and Password=:password";
+$sql ="SELECT id,UserName,Password,role FROM tbladmin WHERE UserName=:uname and Password=:password";
 $query= $dbh -> prepare($sql);
 $query-> bindParam(':uname', $uname, PDO::PARAM_STR);
 $query-> bindParam(':password', $password, PDO::PARAM_STR);
@@ -13,9 +13,9 @@ $query-> execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
 if($query->rowCount() > 0)
 {
-$_SESSION['alogin']=$_POST['username'];
+$_SESSION['alogin']=$results[0]->id;
 $_SESSION['arole'] = $results[0]->role;
-$_SESSION['notiadmin'] = 'Chào mừng ' . $_SESSION['alogin'] . ' đã đăng nhập trang quản lý';
+$_SESSION['notiadmin'] = 'Chào mừng ' . $results[0]->UserName . ' đã đăng nhập trang quản lý';
 echo "<script type='text/javascript'> document.location = 'dashboard.php'; </script>";
 } else{
   $noti = 'Bạn đã nhập sai tài khoản hoặc mật khẩu';

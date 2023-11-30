@@ -5,15 +5,15 @@ include('utils/config.php');
 if(isset($_POST['submit']))
 {
 $pid=intval($_GET['pkgid']);
-$useremail=$_SESSION['login'];
+$id=$_SESSION['login'];
 $fromdate=$_POST['fromdate'];
 $todate=$_POST['todate'];
 $comment=$_POST['comment'];
 $status=0;
-$sql="INSERT INTO tblbooking(PackageId,UserEmail,FromDate,ToDate,Comment,status) VALUES(:pid,:useremail,:fromdate,:todate,:comment,:status)";
+$sql="INSERT INTO tblbooking(PackageId,iduser,FromDate,ToDate,Comment,status) VALUES(:pid,:id,:fromdate,:todate,:comment,:status)";
 $query = $dbh->prepare($sql);
 $query->bindParam(':pid',$pid,PDO::PARAM_STR);
-$query->bindParam(':useremail',$useremail,PDO::PARAM_STR);
+$query->bindParam(':id',$id,PDO::PARAM_STR);
 $query->bindParam(':fromdate',$fromdate,PDO::PARAM_STR);
 $query->bindParam(':todate',$todate,PDO::PARAM_STR);
 $query->bindParam(':comment',$comment,PDO::PARAM_STR);
@@ -23,6 +23,10 @@ $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
 $msg="Booked Successfully";
+$sql2="INSERT INTO tblacceptbooking(idbooking) VALUES(:pid)";
+$query2 = $dbh->prepare($sql2);
+$query2->bindParam(':pid',$lastInsertId,PDO::PARAM_STR);
+$query2->execute();
 }
 else 
 {

@@ -19,7 +19,7 @@
     </div>
     <?php } ?>
     <?php if (in_array('Manager Tour', $items)) { ?>
-    <div class="navbar-menu__item">
+    <div class="navbar-menu__item navbar-advance">
       <div href="" class="navbar-menu__link">
         <i class="navbar-icon fa-solid fa-plane-departure"></i>
         <span class="navbar-menu__text">Manager Tour</span>
@@ -34,7 +34,7 @@
     </div>
     <?php } ?>
     <?php if (in_array('Manager Staff', $items)) { ?>
-    <div class="navbar-menu__item">
+    <div class="navbar-menu__item navbar-advance--staff">
       <div href="" class="navbar-menu__link">
       <i class="fa-regular fa-user"></i>
         <span class="navbar-menu__text">Manager Staff</span>

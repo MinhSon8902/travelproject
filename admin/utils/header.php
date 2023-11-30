@@ -1,3 +1,10 @@
+<?php
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+} 
+$role=$_SESSION['arole']
+?>
 <div class="header">
   <div class="header-container">
     <a class="header-logo" href="dashboard.php">
@@ -24,7 +31,10 @@
       <i class="fa-solid fa-user-gear"></i>
       <div class="header-info">
         <p class="header-info__title">Welcome</p>
-        <span class="header-info__name"><?php echo htmlentities($_SESSION['alogin']);?></span>
+        <span class="header-info__name"><?php if($role == 0) echo "Quản Lý";
+        else if ($role == 1) echo "Nhân Viên Chăm Sóc";
+        else if ($role == 2) echo "Nhân Viên Thống Kê";
+        else if ($role == 3) echo "Nhân Viên Page"?></span>
       </div>
       <i class="fa-solid fa-chevron-down"></i>
       <!-- <i class="fa-solid fa-chevron-up"></i> -->

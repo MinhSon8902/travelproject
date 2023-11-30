@@ -64,7 +64,7 @@ else{
               <i class="fa-solid fa-person"></i>
               <div class="main-item__content">
                 <h3 class="main-title">Staff</h3>
-                <?php $sql = "SELECT id from tblstaff";
+                <?php $sql = "SELECT id from tbladmin";
                     $query = $dbh -> prepare($sql);
                     $query->execute();
                     $results=$query->fetchAll(PDO::FETCH_OBJ);

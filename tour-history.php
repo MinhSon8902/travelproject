@@ -10,10 +10,10 @@ else{
 if(isset($_REQUEST['bkid']))
 	{
 		$bid=intval($_GET['bkid']);
-    $email=$_SESSION['login'];
-	  $sql ="SELECT BookingId FROM tblbooking WHERE UserEmail=:email and BookingId=:bid";
+    $idkh=$_SESSION['login'];
+	  $sql ="SELECT BookingId FROM tblbooking WHERE iduser =:idkh and BookingId=:bid";
     $query= $dbh -> prepare($sql);
-    $query-> bindParam(':email', $email, PDO::PARAM_STR);
+    $query-> bindParam(':idkh', $idkh, PDO::PARAM_STR);
     $query-> bindParam(':bid', $bid, PDO::PARAM_STR);
     $query-> execute();
     $results = $query -> fetchAll(PDO::FETCH_OBJ);
@@ -23,11 +23,11 @@ foreach($results as $result)
 {
     $status=2;
     $cancelby='u';
-    $sql = "UPDATE tblbooking SET status=:status,CancelledBy=:cancelby WHERE UserEmail=:email and BookingId=:bid";
+    $sql = "UPDATE tblbooking SET status=:status,CancelledBy=:cancelby WHERE iduser=:idkh and BookingId=:bid";
     $query = $dbh->prepare($sql);
     $query -> bindParam(':status',$status, PDO::PARAM_STR);
     $query -> bindParam(':cancelby',$cancelby , PDO::PARAM_STR);
-    $query-> bindParam(':email',$email, PDO::PARAM_STR);
+    $query-> bindParam(':idkh',$idkh, PDO::PARAM_STR);
     $query-> bindParam(':bid',$bid, PDO::PARAM_STR);
     $query -> execute();
     $msg="Booking Cancelled successfully";
@@ -140,10 +140,10 @@ foreach($results as $result)
             </tr>
             <?php 
 
-$uemail=$_SESSION['login'];;
-$sql = "SELECT tblbooking.BookingId as bookid,tblbooking.PackageId as pkgid,tbltourpackages.PackageName as packagename,tblbooking.FromDate as fromdate,tblbooking.ToDate as todate,tblbooking.Comment as comment,tblbooking.status as status,tblbooking.RegDate as regdate,tblbooking.CancelledBy as cancelby,tblbooking.UpdationDate as upddate from tblbooking join tbltourpackages on tbltourpackages.PackageId=tblbooking.PackageId where UserEmail=:uemail";
+$uidkh=$_SESSION['login'];;
+$sql = "SELECT tblbooking.BookingId as bookid,tblbooking.PackageId as pkgid,tbltourpackages.PackageName as packagename,tblbooking.FromDate as fromdate,tblbooking.ToDate as todate,tblbooking.Comment as comment,tblbooking.status as status,tblbooking.RegDate as regdate,tblbooking.CancelledBy as cancelby,tblbooking.UpdationDate as upddate from tblbooking join tbltourpackages on tbltourpackages.PackageId=tblbooking.PackageId where iduser =:uidkh";
 $query = $dbh->prepare($sql);
-$query -> bindParam(':uemail', $uemail, PDO::PARAM_STR);
+$query -> bindParam(':uidkh', $uidkh, PDO::PARAM_STR);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
 $cnt=1;
