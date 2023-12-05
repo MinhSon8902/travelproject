@@ -14,7 +14,7 @@ $pmobile=$_POST['mobile'];
 $pusername=$_POST['username'];
 $ppassword=$_POST['password'];	
 $pinputrole=$_POST['inputrole'];
-$con ="SELECT UserName FROM tblstaff WHERE UserName=:pusername";
+$con ="SELECT UserName FROM tbladmin WHERE UserName=:pusername";
   $check = $dbh -> prepare($con);
   $check-> bindParam(':pusername', $pusername, PDO::PARAM_STR);
   $check-> execute();
@@ -22,7 +22,7 @@ $con ="SELECT UserName FROM tblstaff WHERE UserName=:pusername";
     $error="Username đã trùng trong cơ sở dữ liệu";
   }
   else {
-    $sql="INSERT INTO tblstaff(FullName,MobileNumber,UserName,Password,role) VALUES(:pname,:pmobile,:pusername,:ppassword,:pinputrole)";
+    $sql="INSERT INTO tbladmin(FullName,MobileNumber,UserName,Password,role) VALUES(:pname,:pmobile,:pusername,:ppassword,:pinputrole)";
     $query = $dbh->prepare($sql);
     $query->bindParam(':pname',$pname,PDO::PARAM_STR);
     $query->bindParam(':pmobile',$pmobile,PDO::PARAM_STR);
@@ -91,37 +91,36 @@ $con ="SELECT UserName FROM tblstaff WHERE UserName=:pusername";
             <form class="form-control" name="package" action="" method="post" enctype="multipart/form-data">
               <div class="form-row">
                 <div class="form-group form-column">
-                  <label for="fullname" class="form-label">Full Name</label>
+                  <label for="fullname" class="form-label">Tên TK</label>
                   <input type="text" class="form-input" name="fullname" id="fullname" placeholder="Create User"
                     required>
                 </div>
                 <div class="form-group form-column">
-                  <label for="mobile" class="form-label">Mobile</label>
-                  <input type="text" class="form-input" name="mobile" id="mobile" placeholder="Mobile"
-                    required>
+                  <label for="mobile" class="form-label">Số Điện Thoại</label>
+                  <input type="text" class="form-input" name="mobile" id="mobile" placeholder="Mobile" required>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group form-column">
-                  <label for="username" class="form-label">UserName</label>
-                  <input type="text" class="form-input" name="username" id="username"
-                    placeholder="UserName" required>
+                  <label for="username" class="form-label">Tên Người Dùng</label>
+                  <input type="text" class="form-input" name="username" id="username" placeholder="UserName" required>
                 </div>
                 <div class="form-group form-column">
-                  <label for="password" class="form-label">Password</label>
+                  <label for="password" class="form-label">Mật Khẩu</label>
                   <input type="password" name="password" id="password" placeholder="Password" required>
                 </div>
               </div>
               <div class="form-group">
-                <label for="inputrole" class="form-label">Role</label>
-                <select id="inputrole" name="inputrole" style="border: 1px solid #ccc; padding: 5px; border-radius: 5px;" required>
-                  <option value="" disabled selected>Chọn Role</option>
+                <label for="inputrole" class="form-label">Chức Vụ</label>
+                <select id="inputrole" name="inputrole"
+                  style="border: 1px solid #ccc; padding: 5px; border-radius: 5px;" required>
+                  <option value="" disabled selected>Chọn Chức Vụ</option>
                   <!-- <option value="0">Quản Lý</option> -->
                   <option value="1">Nhân Viên Quản Lý Website</option>
                   <option value="2">Nhân Viên Chăm Sóc Khách Hàng</option>
                   <option value="3">Nhân Viên Thống Kê</option>
                 </select>
-              </div>                  
+              </div>
               <div class="form-group form-btn">
                 <button type="submit" name="submit" class="btn--primary btn">Create</button>
                 <button type="reset" class="btn--inverse btn">Reset</button>

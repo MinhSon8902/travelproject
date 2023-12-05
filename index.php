@@ -58,45 +58,76 @@ $rows = $querysearch->rowCount();
     <div class="main-top">
       <?php include('utils/header.php');?>
     </div>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img
-            src="https://img.freepik.com/premium-vector/happy-new-year-2023-chinese-new-year-year-cat-happy-lunar-new-year-2023-cat-illustration_692630-132.jpg?w=1380"
-            alt="" />
-          <h3 class="swiper-title">Data Travel</h3>
-          <p class="swiper-desc">Phục vụ chuyên nghiệp</p>
+    <div class="main-header">
+      <div class="overlap">
+        <div class="bg"></div>
+        <div class="contents">
+          <div class="left">
+            <div class="overlap-group">
+              <img class="eliment" src="https://c.animaapp.com/nYbHPN0l/img/eliment@2x.png" />
+              <img class="ornament" src="https://c.animaapp.com/nYbHPN0l/img/ornament-83.svg" />
+              <div class="div">
+                <div class="heading-button">
+                  <div class="heading">
+                    <p class="travel-planning-made">
+                      <span class="span">Lập Kế Hoạch Du Lịch <br /></span> <span class="text-wrapper-2">Dễ Dàng</span>
+                    </p>
+                    <p class="we-make-it-easy-to">
+                      Chúng tôi giúp bạn dễ dàng lập kế hoạch và đặt chuyến đi tiếp theo với
+                      hành trình từng ngày.
+                    </p>
+                  </div>
+                  <div class="search-input">
+                    <div class="search-bar">
+                      <div class="text-wrapper-3">Plan a Trip</div>
+                      <div class="icon-circle">
+                        <img class="icons-arrow-right"
+                          src="https://c.animaapp.com/nYbHPN0l/img/icons-arrow-right-2-line-9.svg" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="review">
+                  <div class="text-wrapper-4">Khách hàng của chúng tôi nói</div>
+                  <p class="out-of-on">
+                    <span class="text-wrapper-5">out of 5 on </span>
+                    <span class="text-wrapper-6">194</span>
+                    <span class="text-wrapper-5"> reviews</span>
+                  </p>
+                  <div class="text-wrapper-7">4.7</div>
+                  <div class="text-wrapper-8">Xuất sắc</div>
+                  <div class="element-star">
+                    <img class="img-2" src="https://c.animaapp.com/nYbHPN0l/img/path-45.svg" />
+                    <img class="path-2" src="https://c.animaapp.com/nYbHPN0l/img/path-45.svg" />
+                    <img class="path-3" src="https://c.animaapp.com/nYbHPN0l/img/path-45.svg" />
+                    <img class="path-4" src="https://c.animaapp.com/nYbHPN0l/img/path-45.svg" />
+                    <div class="mask-group-wrapper">
+                      <img class="img-2" src="https://c.animaapp.com/nYbHPN0l/img/mask-group-6@2x.png" />
+                    </div>
+                  </div>
+                  <div class="rectangle-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img src="https://img.freepik.com/premium-vector/travel-asia-road-trip_207954-235.jpg?w=1060" alt="" />
-          <h3 class="swiper-title">Data Travel</h3>
-          <p class="swiper-desc">Uy tín</p>
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="https://img.freepik.com/free-vector/realistic-travel-agency-template-design_23-2149340532.jpg?w=1060&t=st=1670386546~exp=1670387146~hmac=fcc18f0b0126321a43d821787ccab19afb085c5d23e13614f1ebecfdd1eddc76"
-            alt="" />
-          <h3 class="swiper-title">Data Travel</h3>
-          <p class="swiper-desc">Trải nghiệm tuyệt hảo</p>
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="https://img.freepik.com/premium-vector/travel-world-road-trip-tourism-landmarks-globe-concept-website-template-illustration-modern-flat-design_207954-6.jpg?w=996"
-            alt="" />
-          <h3 class="swiper-title">Data Travel</h3>
-          <p class="swiper-desc">Cảm giác mạnh mẽ</p>
-        </div>
-        <div class="swiper-slide">
-          <img
-            src="https://img.freepik.com/free-vector/thailand-cities-skyline-silhouette-vector-illustration-white-background-business-travel-tourism-concept-with-famous-thailand-landmarks-image-presentation-banner-web-site_596401-497.jpg?w=1380&t=st=1670386570~exp=1670387170~hmac=610566dacbeab46c58e41930ab35d17fd67145cc094b0289912d3bf17704bc43"
-            alt="" />
-          <h3 class="swiper-title">Data Travel</h3>
-          <p class="swiper-desc">Tận hưởng</p>
+        <div class="overlap-wrapper">
+          <div class="overlap-2">
+            <img class="ornament-2" src="https://c.animaapp.com/nYbHPN0l/img/ornament-82.svg" />
+            <div class="background-eliment">
+              <div class="overlap-group-2">
+                <div class="ellipse"></div>
+                <div class="ellipse-2"></div>
+                <div class="ellipse-3"></div>
+                <div class="ellipse-4"></div>
+                <img class="ellipse-5" src="https://c.animaapp.com/nYbHPN0l/img/ellipse-2170.svg" />
+              </div>
+            </div>
+            <img class="image-2" src="https://c.animaapp.com/nYbHPN0l/img/image-2.png" />
+            <img class="card" src="https://c.animaapp.com/nYbHPN0l/img/card.svg" />
+          </div>
         </div>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
     </div>
     <main>
       <div class="main-container">
@@ -126,10 +157,10 @@ $rows = $querysearch->rowCount();
         </section>
         <section class="tripplanning">
           <div class="tripplanning-container">
-            <h2 class="tripplanning-heading wow fadeInLeft">Innovative Trip Planning</h2>
+            <h2 class="tripplanning-heading wow fadeInLeft">Lập kế hoạch chuyến đi sáng tạo</h2>
             <p class="tripplanning-desc wow fadeInLeft">
-              Our Vision is to revolutionize the way people travel by introducing intelligent trip
-              planning
+              Tầm nhìn của chúng tôi là cách mạng hóa cách mọi người đi du lịch bằng cách giới thiệu kế hoạch chuyến đi
+              thông minh
             </p>
             <div class="tripplanning-list wow fadeInLeft" data-wow-delay="1.5s">
               <div class="tripplanning-item">
@@ -143,9 +174,9 @@ $rows = $querysearch->rowCount();
                     </svg>
                   </span>
                   <p class="tripplanning-item__desc">
-                    Partner allows you to browse multiple carriers for travel.
+                    Đối tác cho phép bạn duyệt qua nhiều hãng vận chuyển để đi du lịch.
                   </p>
-                  <a href="#" class="tripplanning-item__link">Learn More<span><svg width="24" height="24"
+                  <a href="#" class="tripplanning-item__link">Tìm Hiểu Thêm<span><svg width="24" height="24"
                         viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
@@ -167,9 +198,9 @@ $rows = $querysearch->rowCount();
                     </svg>
                   </span>
                   <p class="tripplanning-item__desc">
-                    The website is a way for partners to communicate with their customers.
+                    Trang web là một cách để các đối tác giao tiếp với khách hàng của họ.
                   </p>
-                  <a href="#" class="tripplanning-item__link">Learn More<span><svg width="24" height="24"
+                  <a href="#" class="tripplanning-item__link">Tìm Hiểu Thêm<span><svg width="24" height="24"
                         viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
@@ -188,9 +219,9 @@ $rows = $querysearch->rowCount();
                     </svg>
                   </span>
                   <p class="tripplanning-item__desc">
-                    The eBook Reader is a new way to look at e-books.
+                    Trình đọc sách điện tử là một cách mới để xem sách điện tử.
                   </p>
-                  <a href="#" class="tripplanning-item__link">Learn More<span><svg width="24" height="24"
+                  <a href="#" class="tripplanning-item__link">Tìm Hiểu Thêm<span><svg width="24" height="24"
                         viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
@@ -205,36 +236,16 @@ $rows = $querysearch->rowCount();
           <div class="container">
             <div class="booksteps-container">
               <div class="booksteps-create">
-                <div class="booksteps-create__container wow fadeInUp">
-                  <div class="booksteps-img">
-                    <img src="./images/card-book2x.png" alt="" />
-                  </div>
-                  <div class="booksteps-create__pagination">
-                    <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M14.0909 7.26521C14.4968 6.8906 15.1294 6.9159 15.504 7.32172L18.7348 10.8217C19.0884 11.2047 19.0884 11.7952 18.7348 12.1782L15.504 15.6783C15.1294 16.0841 14.4968 16.1094 14.091 15.7348C13.6851 15.3602 13.6598 14.7276 14.0344 14.3217L15.716 12.5L6 12.5C5.44771 12.5 5 12.0523 5 11.5C5 10.9477 5.44771 10.5 6 10.5L15.716 10.5L14.0344 8.67829C13.6598 8.27247 13.6851 7.63981 14.0909 7.26521Z"
-                          fill="#353945" />
-                      </svg>
-                    </span>
-                    <div><span>01</span>/03</div>
-                    <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M9.90906 7.26521C9.50324 6.8906 8.87058 6.9159 8.49597 7.32172L5.2652 10.8217C4.9116 11.2047 4.9116 11.7952 5.26519 12.1782L8.49597 15.6783C8.87057 16.0841 9.50323 16.1094 9.90905 15.7348C10.3149 15.3602 10.3402 14.7276 9.96558 14.3217L8.28397 12.5L18 12.5C18.5523 12.5 19 12.0523 19 11.5C19 10.9477 18.5523 10.5 18 10.5L8.284 10.5L9.96557 8.67829C10.3402 8.27247 10.3149 7.63981 9.90906 7.26521Z"
-                          fill="#353945" />
-                      </svg>
-                    </span>
-                  </div>
+                <div class="booksteps-img wow fadeInUp">
+                  <img src="./images/howitworks.png" alt="" />
                 </div>
               </div>
               <div class="booksteps-content wow fadeInUp">
                 <div class="booksteps-top">
-                  <h2 class="booksteps-heading">Book Easy 3 Steps</h2>
+                  <h2 class="booksteps-heading">Đặt vé dễ dàng 3 bước</h2>
                   <p class="booksteps-top__desc">
-                    Planning a trip is sometimes not easy. But Trip Plan will help you to manage
-                    time and budget for your journey! There are only 3 steps: Create an account,
-                    choose your destination city.
+                    Lên kế hoạch cho một chuyến đi đôi khi không hề dễ dàng. Nhưng Trip Plan sẽ giúp bạn quản lý thời
+                    gian và ngân sách cho hành trình của mình! Chỉ có 3 bước: Tạo tài khoản, chọn thành phố nơi bạn đến.
                   </p>
                   <div class="booksteps-list">
                     <div class="booksteps-item">
@@ -243,7 +254,7 @@ $rows = $querysearch->rowCount();
                           <circle cx="10" cy="10.5" r="7.5" stroke="#3B71FE" stroke-width="5" />
                         </svg>
                       </span>
-                      <p style="color: #353945;">Set Up your Account</p>
+                      <p style="color: #353945;">Thiết lập tài khoản của bạn</p>
                     </div>
                     <div class="booksteps-item">
                       <span><svg width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -251,7 +262,7 @@ $rows = $querysearch->rowCount();
                           <circle cx="10" cy="10.5" r="7.5" stroke="#3B71FE" stroke-width="5" />
                         </svg>
                       </span>
-                      <p style="color: #353945;">Respond to Private requests</p>
+                      <p style="color: #353945;">Trả lời các yêu cầu riêng tư</p>
                     </div>
                     <div class="booksteps-item">
                       <span><svg width="20" height="21" viewBox="0 0 20 21" fill="none"
@@ -259,18 +270,18 @@ $rows = $querysearch->rowCount();
                           <circle cx="10" cy="10.5" r="7.5" stroke="#3B71FE" stroke-width="5" />
                         </svg>
                       </span>
-                      <p style="color: #353945;">Book your Trip</p>
+                      <p style="color: #353945;">Đặt chuyến đi của bạn</p>
                     </div>
                   </div>
                 </div>
                 <p class="booksteps-desc">
-                  “Plan your trip with a 3-step trip plan. Check in out at a glance, select hotel
-                  rooms on the go, and create a packing list”
+                  “Lên kế hoạch cho chuyến đi của bạn với kế hoạch chuyến đi gồm 3 bước. Kiểm tra nhanh, chọn phòng
+                  khách sạn khi đang di chuyển và tạo danh sách đóng gói”
                 </p>
                 <div class="booksteps-user">
                   <div class="booksteps-user__img"><img src="./images/avator.png" alt="" /></div>
                   <div class="booksteps-user__info">
-                    <span class="booksteps-user__name">BUI MINH SON</span>
+                    <span class="booksteps-user__name">TEAM</span>
                     <p class="booksteps-user__desc">Co-Founder and CEO and Developer</p>
                   </div>
                 </div>
@@ -280,7 +291,7 @@ $rows = $querysearch->rowCount();
         </section>
         <section class="tour">
           <div class="main-left wow fadeInLeftBig">
-            <h4 class="main-text main-text--big">Search location or property</h4>
+            <h4 class="main-text main-text--big">Tìm kiếm vị trí hoặc căn hộ</h4>
             <div class="main-top">
               <form class="main-search" method="POST">
                 <span class="main-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"
@@ -290,53 +301,50 @@ $rows = $querysearch->rowCount();
                       fill="#777E91" />
                   </svg>
                 </span>
-                <input type="text" id="search-locate" name="search" placeholder="Search location or property"
+                <input type="text" id="search-locate" name="search" placeholder="Nhập địa điểm bạn muốn tìm kiếm"
                   value="<?php echo $key;?>" />
-                <button type="submit" name="submitsearch" class="btn" style="margin-top: 20px;">Search</button>
+                <button type="submit" name="submitsearch" class="btn" style="margin-top: 20px;">Tìm Kiếm</button>
               </form>
               <div class="main-group">
                 <div class="main-item checkbox">
                   <input type="checkbox" name="sidetrips" id="sidetrips" class="checkbox__input" />
-                  <label for="sidetrips" class="main-text checkbox__label">Show side trips</label>
+                  <label for="sidetrips" class="main-text checkbox__label">Hiển thị các chuyến đi phụ</label>
                 </div>
                 <div class="main-item checkbox">
                   <input type="checkbox" name="mytrips" id="mytrips" class="checkbox__input" />
-                  <label for="mytrips" class="main-text checkbox__label">Show items in my trips</label>
+                  <label for="mytrips" class="main-text checkbox__label">Hiển thị các mục trong chuyến đi của
+                    tôi</label>
                 </div>
               </div>
               <div class="checkbox-category">
-                <span class="main-text main-text--big">Activity type</span>
-                <div class="main-item checkbox">
-                  <input type="checkbox" name="" id="hiddenGem" class="checkbox__input" />
-                  <label for="hiddenGem" class="main-text checkbox__label">Hidden Gems</label>
-                </div>
+                <span class="main-text main-text--big">Loại hoạt động</span>
                 <div class="main-item checkbox">
                   <input type="checkbox" name="" id="shopPing" class="checkbox__input" />
-                  <label for="shopPing" class="main-text checkbox__label">Shopping </label>
+                  <label for="shopPing" class="main-text checkbox__label">Mua sắm</label>
                 </div>
                 <div class="main-item checkbox">
                   <input type="checkbox" name="" id="historic" class="checkbox__input" />
-                  <label for="historic" class="main-text checkbox__label">Historic Sites </label>
+                  <label for="historic" class="main-text checkbox__label">Địa điểm lịch sử</label>
                 </div>
                 <div class="main-item checkbox">
                   <input type="checkbox" name="" id="nightlife" class="checkbox__input" />
-                  <label for="nightlife" class="main-text checkbox__label">Nightlife</label>
+                  <label for="nightlife" class="main-text checkbox__label">Cuộc sống về đêm</label>
                 </div>
                 <div class="main-item checkbox">
                   <input type="checkbox" name="" id="tours" class="checkbox__input" />
-                  <label for="tours" class="main-text checkbox__label">Tours</label>
+                  <label for="tours" class="main-text checkbox__label">Chuyến tham quan</label>
                 </div>
                 <div class="main-item checkbox">
                   <input type="checkbox" name="" id="outDoors" class="checkbox__input" />
-                  <label for="outDoors" class="main-text checkbox__label">Outdoors</label>
+                  <label for="outDoors" class="main-text checkbox__label">Ngoài trời</label>
                 </div>
                 <div class="main-item checkbox">
                   <input type="checkbox" name="" id="museums" class="checkbox__input" />
-                  <label for="museums" class="main-text checkbox__label">U Museums </label>
+                  <label for="museums" class="main-text checkbox__label">Bảo tàng </label>
                 </div>
                 <div class="main-item checkbox">
                   <input type="checkbox" name="" id="parks" class="checkbox__input" />
-                  <label for="parks" class="main-text checkbox__label">Parks</label>
+                  <label for="parks" class="main-text checkbox__label">Công viên</label>
                 </div>
               </div>
             </div>
@@ -370,14 +378,14 @@ $rows = $querysearch->rowCount();
                         <span>(128 reviews)</span>
                       </p>
                     </div>
-                    <p class="card-type">Package Type: <?php echo htmlentities($result->PackageType);?></p>
-                    <p class="card-location">Package Location: <?php echo htmlentities($result->PackageLocation);?></p>
+                    <p class="card-type">Loại Tour: <?php echo htmlentities($result->PackageType);?></p>
+                    <p class="card-location">Địa Điểm Tour: <?php echo htmlentities($result->PackageLocation);?></p>
                     <p class="card-desc">Mô Tả: <?php echo htmlentities($result->PackageFetures);?></p>
                   </div>
                   <div class="card-info">
                     <a href="package-details.php?pkgid=<?php echo htmlentities($result->PackageId);?>"
-                      class="btn btn--medium">Detail</a>
-                    <span class="card-price">Price $<?php echo htmlentities($result->PackagePrice);?></span>
+                      class="btn btn--medium">Chi Tiết</a>
+                    <span class="card-price">Giá VND <?php echo htmlentities($result->PackagePrice);?>M</span>
                   </div>
                 </div>
               </div>
@@ -416,14 +424,14 @@ foreach($results as $result)
                         <span>(298 reviews)</span>
                       </p>
                     </div>
-                    <p class="card-type">Package Type: <?php echo htmlentities($result->PackageType);?></p>
-                    <p class="card-location">Package Location: <?php echo htmlentities($result->PackageLocation);?></p>
+                    <p class="card-type">Loại Tour: <?php echo htmlentities($result->PackageType);?></p>
+                    <p class="card-location">Địa Điểm: <?php echo htmlentities($result->PackageLocation);?></p>
                     <p class="card-desc">Mô Tả: <?php echo htmlentities($result->PackageFetures);?></p>
                   </div>
                   <div class="card-info">
                     <a href="package-details.php?pkgid=<?php echo htmlentities($result->PackageId);?>"
-                      class="btn btn--medium">Detail</a>
-                    <span class="card-price">Price $<?php echo htmlentities($result->PackagePrice);?></span>
+                      class="btn btn--medium">Xem Chi Tiết</a>
+                    <span class="card-price">Giá VND <?php echo htmlentities($result->PackagePrice);?>M</span>
                   </div>
                 </div>
               </div>
@@ -433,7 +441,7 @@ foreach($results as $result)
               </h3>
               <?php }?>
               <?php if($query->rowCount() > 0) { ?>
-              <a href="package-list.php" class="btn btn--big view-more">Explore All</a>
+              <a href="package-list.php" class="btn btn--big view-more">Xem Tất Cả Các Tour</a>
               <?php }}?>
             </div>
           </div>

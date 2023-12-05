@@ -22,7 +22,7 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-$msg="Booked Successfully";
+$msg="Đặt Tour Thành Công";
 $sql2="INSERT INTO tblacceptbooking(idbooking) VALUES(:pid)";
 $query2 = $dbh->prepare($sql2);
 $query2->bindParam(':pid',$lastInsertId,PDO::PARAM_STR);
@@ -42,7 +42,7 @@ $error="Something went wrong. Please try again";
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Package Details</title>
+  <title>Chi Tiết Tour</title>
   <link rel="shortcut icon"
     href="https://cdn-icons-png.flaticon.com/512/1257/1257385.png?w=740&t=st=1670319127~exp=1670319727~hmac=3df5cfb7b4b4084477c31021f476ce730b54abf3c78aacf2ff06db0c21295839"
     type="image/x-icon">
@@ -117,11 +117,10 @@ $error="Something went wrong. Please try again";
     </div>
     <main>
       <div class="detail-container">
-        <?php if($error){?><div class="notify notify--error"><strong>ERROR</strong>:<?php echo htmlentities($error); ?>
+        <?php if($error){?><div class="notify notify--error"><strong>Lỗi</strong>:<?php echo htmlentities($error); ?>
         </div><?php } 
-				else if($msg){?><div class="notify notify--success"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?>
+				else if($msg){?><div class="notify notify--success"><strong>Thành Công</strong>:<?php echo htmlentities($msg); ?>
         </div><?php }?>
-
         <?php 
 $pid=intval($_GET['pkgid']);
 $sql = "SELECT * from tbltourpackages where PackageId=:pid";
@@ -164,27 +163,26 @@ foreach($results as $result)
                 </div>
                 <div class="detail__desc">
                   <div class="detail__desc-item">
-                    <h4 class="detail-heading">Package Type : </h4>
+                    <h4 class="detail-heading">Loại Tour : </h4>
                     <p class="detail-text"><?php echo htmlentities($result->PackageType);?></p>
                   </div>
                   <div class="detail__desc-item">
-                    <h4 class="detail-heading">Package Location : </h4>
+                    <h4 class="detail-heading">Địa điểm Tour : </h4>
                     <p class="detail-text"><?php echo htmlentities($result->PackageLocation);?></p>
                   </div>
                   <div class="detail__desc-item">
-                    <h4 class="detail-heading">Features : </h4>
+                    <h4 class="detail-heading">Tính Năng : </h4>
                     <p class="detail-text"> <?php echo htmlentities($result->PackageFetures);?></p>
                   </div>
                   <div class="detail__desc-item">
-                    <h4 class="detail-heading">Package Details : </h4>
+                    <h4 class="detail-heading">Chi Tiết Tour : </h4>
                     <p class="detail-text"><?php echo htmlentities($result->PackageDetails);?></p>
                   </div>
                 </div>
                 <div class="detail-total">
-                  <span class="detail-heading">Total Price</span>
+                  <span class="detail-heading">Tổng Tiền</span>
                   <div>
-                    <i class="fa-solid fa-dollar-sign"></i>
-                    <span class="detail-total__price"><?php echo htmlentities($result->PackagePrice);?>.</span>
+                    <span class="detail-total__price"><?php echo htmlentities($result->PackagePrice);?>M</span>
                   </div>
                 </div>
               </div>
@@ -193,23 +191,23 @@ foreach($results as $result)
           <div class="detail-form">
             <div class="detail-form__row">
               <div class="detail-form__group">
-                <label for="input-password" class="form-label">From Date</label>
+                <label for="input-password" class="form-label">Từ Ngày</label>
                 <input class="myID" type="text" placeholder="From Date" name="fromdate" required>
               </div>
               <div class="detail-form__group">
-                <label for="input-name" class="form-label">To Date</label>
+                <label for="input-name" class="form-label">Đến Ngày</label>
                 <input class="myID" type="text" placeholder="To Date" name="todate" required>
               </div>
             </div>
             <div class="detail-form__group">
-              <label for="input-name" class="form-label">Comment</label>
+              <label for="input-name" class="form-label">Bình Luận</label>
               <input type="text" name="comment" placeholder="Comment" required>
             </div>
             <?php if($_SESSION['login'])
 					{?>
-            <button type="submit" name="submit" class="btn--medium btn">Book</button>
+            <button type="submit" name="submit" class="btn--medium btn">Đặt</button>
             <?php } else {?>
-            <a id="BookSign" class="btn--medium btn"> Book</a>
+            <a id="BookSign" class="btn--medium btn"> Đặt</a>
             <?php } ?>
           </div>
         </form>

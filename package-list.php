@@ -100,7 +100,7 @@ $rows = $querysearch->rowCount();
       <div class="main-container">
         <section class="tour">
           <div class="main-left">
-            <h4 class="main-text main-text--big">Search location or property</h4>
+            <h4 class="main-text main-text--big">Tìm kiếm vị trí hoặc căn hộ</h4>
             <div class="main-top">
               <form class="main-search" method="POST">
                 <span class="main-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"
@@ -112,51 +112,48 @@ $rows = $querysearch->rowCount();
                 </span>
                 <input type="text" id="search-locate" name="search" placeholder="Search location or property"
                   value="<?php echo $key;?>" />
-                <button type="submit" name="submitsearch" class="btn" style="margin-top: 20px;">Search</button>
+                <button type="submit" name="submitsearch" class="btn" style="margin-top: 20px;">Tìm Kiếm</button>
               </form>
               <div class="main-group">
                 <div class="main-item checkbox">
                   <input type="checkbox" name="" id="sidetrips" class="checkbox__input" />
-                  <label for="sidetrips" class="main-text checkbox__label">Show side trips</label>
+                  <label for="sidetrips" class="main-text checkbox__label">Hiển thị các chuyến đi phụ</label>
                 </div>
                 <div class="main-item checkbox">
                   <input type="checkbox" name="" id="mytrips" class="checkbox__input" />
-                  <label for="mytrips" class="main-text checkbox__label">Show items in my trips</label>
+                  <label for="mytrips" class="main-text checkbox__label">Hiển thị các mục trong chuyến đi của
+                    tôi</label>
                 </div>
               </div>
               <div class="checkbox-category">
-                <span class="main-text main-text--big">Activity type</span>
-                <div class="main-item checkbox">
-                  <input type="checkbox" name="" id="hiddenGem" class="checkbox__input" />
-                  <label for="hiddenGem" class="main-text checkbox__label">Hidden Gems</label>
-                </div>
+                <span class="main-text main-text--big">Loại hoạt động</span>
                 <div class="main-item checkbox">
                   <input type="checkbox" name="" id="shopPing" class="checkbox__input" />
-                  <label for="shopPing" class="main-text checkbox__label">Shopping </label>
+                  <label for="shopPing" class="main-text checkbox__label">Mua sắm </label>
                 </div>
                 <div class="main-item checkbox">
                   <input type="checkbox" name="" id="historic" class="checkbox__input" />
-                  <label for="historic" class="main-text checkbox__label">Historic Sites </label>
+                  <label for="historic" class="main-text checkbox__label">Địa điểm lịch sử </label>
                 </div>
                 <div class="main-item checkbox">
                   <input type="checkbox" name="" id="nightlife" class="checkbox__input" />
-                  <label for="nightlife" class="main-text checkbox__label">Nightlife</label>
+                  <label for="nightlife" class="main-text checkbox__label">Cuộc sống về đêm</label>
                 </div>
                 <div class="main-item checkbox">
                   <input type="checkbox" name="" id="tours" class="checkbox__input" />
-                  <label for="tours" class="main-text checkbox__label">Tours</label>
+                  <label for="tours" class="main-text checkbox__label">Chuyến tham quan</label>
                 </div>
                 <div class="main-item checkbox">
                   <input type="checkbox" name="" id="outDoors" class="checkbox__input" />
-                  <label for="outDoors" class="main-text checkbox__label">Outdoors</label>
+                  <label for="outDoors" class="main-text checkbox__label">Ngoài trời</label>
                 </div>
                 <div class="main-item checkbox">
                   <input type="checkbox" name="" id="museums" class="checkbox__input" />
-                  <label for="museums" class="main-text checkbox__label">U Museums </label>
+                  <label for="museums" class="main-text checkbox__label">Bảo tàng </label>
                 </div>
                 <div class="main-item checkbox">
                   <input type="checkbox" name="" id="parks" class="checkbox__input" />
-                  <label for="parks" class="main-text checkbox__label">Parks</label>
+                  <label for="parks" class="main-text checkbox__label">Công viên</label>
                 </div>
               </div>
             </div>
@@ -190,14 +187,14 @@ $rows = $querysearch->rowCount();
                       <span>(200 reviews)</span>
                     </p>
                   </div>
-                  <p class="card-type">Package Type: <?php echo htmlentities($result->PackageType);?></p>
-                  <p class="card-location">Package Location: <?php echo htmlentities($result->PackageLocation);?></p>
+                  <p class="card-type">Loại Tour: <?php echo htmlentities($result->PackageType);?></p>
+                  <p class="card-location">Địa Điểm: <?php echo htmlentities($result->PackageLocation);?></p>
                   <p class="card-desc">Mô Tả: <?php echo htmlentities($result->PackageFetures);?></p>
                 </div>
                 <div class="card-info">
                   <a href="package-details.php?pkgid=<?php echo htmlentities($result->PackageId);?>"
-                    class="btn btn--medium">Detail</a>
-                  <span class="card-price">Price $<?php echo htmlentities($result->PackagePrice);?></span>
+                    class="btn btn--medium">Chi Tiết</a>
+                  <span class="card-price">Giá VND<?php echo htmlentities($result->PackagePrice);?>M</span>
                 </div>
               </div>
             </div>
@@ -236,14 +233,14 @@ foreach($results as $result)
                       <span>(122 reviews)</span>
                     </p>
                   </div>
-                  <p class="card-type">Package Type: <?php echo htmlentities($result->PackageType);?></p>
-                  <p class="card-location">Package Location: <?php echo htmlentities($result->PackageLocation);?></p>
+                  <p class="card-type">Loại Tour: <?php echo htmlentities($result->PackageType);?></p>
+                  <p class="card-location">Địa Chỉ Tour: <?php echo htmlentities($result->PackageLocation);?></p>
                   <p class="card-desc">Mô Tả: <?php echo htmlentities($result->PackageFetures);?></p>
                 </div>
                 <div class="card-info">
                   <a href="package-details.php?pkgid=<?php echo htmlentities($result->PackageId);?>"
-                    class="btn btn--medium">Detail</a>
-                  <span class="card-price">Price $<?php echo htmlentities($result->PackagePrice);?></span>
+                    class="btn btn--medium">Chi Tiết</a>
+                  <span class="card-price">Giá VND<?php echo htmlentities($result->PackagePrice);?>M</span>
                 </div>
               </div>
             </div>

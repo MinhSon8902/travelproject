@@ -15,7 +15,7 @@ $pmobile=$_POST['mobile'];
 $pusername=$_POST['username'];
 $pinputrole=$_POST['inputrole'];
 $ppassword=$_POST['password'];
-$sql="update tblstaff set FullName=:pname,MobileNumber=:pmobile,UserName=:pusername,role=:pinputrole,password=:ppassword where id=:pid";
+$sql="update tbladmin set FullName=:pname,MobileNumber=:pmobile,UserName=:pusername,role=:pinputrole,password=:ppassword where id=:pid";
 $query = $dbh->prepare($sql);
 $query->bindParam(':pname',$pname,PDO::PARAM_STR);
 $query->bindParam(':pmobile',$pmobile,PDO::PARAM_STR);
@@ -60,7 +60,8 @@ $msg="Account Updated Successfully";
     </div>
     <div class="main-right">
       <div class="main-navigation">
-        <div class="main-navigation__item"><a href="dashboard.php">Home</a><i class="fa-solid fa-chevron-right"></i>Update
+        <div class="main-navigation__item"><a href="dashboard.php">Home</a><i
+            class="fa-solid fa-chevron-right"></i>Update
           Account
         </div>
       </div>
@@ -75,7 +76,7 @@ $msg="Account Updated Successfully";
         <div class="main-form">
           <?php 
 $pid=intval($_GET['pid']);
-$sql = "SELECT * from tblstaff where id=:pid";
+$sql = "SELECT * from tbladmin where id=:pid";
 $query = $dbh -> prepare($sql);
 $query -> bindParam(':pid', $pid, PDO::PARAM_STR);
 $query->execute();
@@ -87,40 +88,43 @@ foreach($results as $result)
           <form class="form-control" name="package" action="" method="post" enctype="multipart/form-data">
             <div class="form-row">
               <div class="form-group form-column">
-              <label for="fullname" class="form-label">Full Name</label>
-                  <input type="text" class="form-input" name="fullname" id="fullname" placeholder="Create User"
+                <label for="fullname" class="form-label">Full Name</label>
+                <input type="text" class="form-input" name="fullname" id="fullname" placeholder="Create User"
                   value="<?php echo htmlentities($result->FullName);?>" required>
               </div>
               <div class="form-group form-column">
-              <label for="mobile" class="form-label">Mobile</label>
-                  <input type="text" class="form-input" name="mobile" id="mobile" placeholder="Mobile"
+                <label for="mobile" class="form-label">Mobile</label>
+                <input type="text" class="form-input" name="mobile" id="mobile" placeholder="Mobile"
                   value="<?php echo htmlentities($result->MobileNumber);?>" required>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group form-column">
-              <label for="username" class="form-label">UserName</label>
-                  <input type="text" class="form-input" name="username" id="username"
-                    placeholder="UserName" value="<?php echo htmlentities($result->UserName);?>" required>
+                <label for="username" class="form-label">UserName</label>
+                <input type="text" class="form-input" name="username" id="username" placeholder="UserName"
+                  value="<?php echo htmlentities($result->UserName);?>" required>
               </div>
               <div class="form-group form-column">
                 <label for="inputrole" class="form-label">Role</label>
-                <select  id="inputrole" name="inputrole" style="border: 1px solid #ccc; padding: 5px; border-radius: 5px;" required>
-                    <option value="0" <?php if ($result->role == 0) echo "selected"; ?>>Nhân Viên Quản Lý</option>
-                    <option value="1" <?php if ($result->role == 1) echo "selected"; ?>>Nhân Viên Chăm Sóc Khách Hàng</option>
-                    <option value="2" <?php if ($result->role == 2) echo "selected"; ?>>Nhân Viên Thống Kê</option>
-                    <option value="3" <?php if ($result->role == 3) echo "selected"; ?>>Nhân Viên Page</option>
+                <select id="inputrole" name="inputrole"
+                  style="border: 1px solid #ccc; padding: 5px; border-radius: 5px;" required>
+                  <option value="0" <?php if ($result->role == 0) echo "selected"; ?>>Nhân Viên Quản Lý</option>
+                  <option value="1" <?php if ($result->role == 1) echo "selected"; ?>>Nhân Viên Chăm Sóc Khách Hàng
+                  </option>
+                  <option value="2" <?php if ($result->role == 2) echo "selected"; ?>>Nhân Viên Thống Kê</option>
+                  <option value="3" <?php if ($result->role == 3) echo "selected"; ?>>Nhân Viên Page</option>
                 </select>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group">
-                  <label for="" class="form-label">Password: </label>
-                  <input type="text" name="password" id="password" class="form-input" placeholder="Password" value="<?php echo htmlentities($result->Password);?>" required>
+                <label for="" class="form-label">Password: </label>
+                <input type="text" name="password" id="password" class="form-input" placeholder="Password"
+                  value="<?php echo htmlentities($result->Password);?>" required>
               </div>
-            </div>      
+            </div>
             <div class="form-group">
-              <label for="" class="form-label">Last Updation Date</label>
+              <label for="" class="form-label">Cập Nhật Lần Cuối</label>
               <div class="col-sm-8">
                 <?php echo htmlentities($result->updationDate);?>
               </div>

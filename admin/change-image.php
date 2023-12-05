@@ -82,7 +82,7 @@ if($query->rowCount() > 0)
 foreach($results as $result)
 {	?>
               <div class="form-row" style="justify-content: unset; column-gap:10px ; margin-bottom: 20px">
-                <label for="packagename" class="form-label">Package Name</label>
+                <label for="packagename" class="form-label">Tên Tour</label>
                 <img src="packageimages/<?php echo htmlentities($result->PackageImage);?>" width="200">
               </div>
               <div class="form-row form-file" style="justify-content: unset; column-gap:10px ; margin-bottom: 50px">

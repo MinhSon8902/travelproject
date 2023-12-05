@@ -11,18 +11,18 @@ if(isset($_POST['submit']))
 	{
 $password=$_POST['password'];
 $newpassword=$_POST['newpassword'];
-$email=$_SESSION['login'];
-	$sql ="SELECT Password FROM tblusers WHERE EmailId=:email and Password=:password";
+$id=$_SESSION['login'];
+$sql ="SELECT Password FROM tblusers WHERE id=:idd and Password=:password";
 $query= $dbh -> prepare($sql);
-$query-> bindParam(':email', $email, PDO::PARAM_STR);
+$query-> bindParam(':idd', $id, PDO::PARAM_STR);
 $query-> bindParam(':password', $password, PDO::PARAM_STR);
 $query-> execute();
 $results = $query -> fetchAll(PDO::FETCH_OBJ);
 if($query -> rowCount() > 0)
 {
-$con="update tblusers set Password=:newpassword where EmailId=:email";
+$con="update tblusers set Password=:newpassword where id=:idd";
 $changepass = $dbh->prepare($con);
-$changepass-> bindParam(':email', $email, PDO::PARAM_STR);
+$changepass-> bindParam(':idd', $id, PDO::PARAM_STR);
 $changepass-> bindParam(':newpassword', $newpassword, PDO::PARAM_STR);
 $changepass->execute();
 $msg="Your Password succesfully changed";
@@ -122,7 +122,7 @@ $error="Your current password is wrong";
   <main>
     <div class="form">
       <div class="form-container">
-        <h3 class="form-title">Change Password</h3>
+        <h3 class="form-title">Thay Đổi Mật Khẩu</h3>
         <form action="" name="changePass" method="post" class="form" onSubmit="return validate();">
           <?php if($error){?><div class="notify notify--error">
             <strong>ERROR</strong>:<?php echo htmlentities($error); ?>
@@ -131,17 +131,17 @@ $error="Your current password is wrong";
             <strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?>
           </div><?php }?>
           <div class="form-group">
-            <label for="" class="form-label">Current Password: </label>
+            <label for="" class="form-label">Mật Khẩu Hiện Tại: </label>
             <input type="password" name="password" id="password" class="form-input" placeholder="Current Password"
               required>
           </div>
           <div class="form-group">
-            <label for="" class="form-label">New Password: </label>
+            <label for="" class="form-label">Mật Khẩu Mới: </label>
             <input type="password" name="newpassword" id="newpassword" class="form-input" placeholder="New Password"
               required>
           </div>
           <div class="form-group">
-            <label for="" class="form-label">Confirm Password: </label>
+            <label for="" class="form-label">Xác Nhận Mật Khẩu: </label>
             <input type="password" name="confirmpassword" id="confirmpassword" class="form-input"
               placeholder="Confirm Password" required>
           </div>

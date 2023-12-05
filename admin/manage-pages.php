@@ -135,8 +135,8 @@ $msg="Page data updated successfully";
               </div>
             </div>
             <div class="form-group">
-              <label for="packagedetails" class="form-label">Package Details</label>
-              <textarea rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Package Details"><?php 
+              <label for="packagedetails" class="form-label">Chi Tiết Tour</label>
+              <textarea rows="5" cols="50" name="packagedetails" id="packagedetails" placeholder="Chi Tiết Tour"><?php 
 $pagetype=$_GET['type'];
 $sql = "SELECT detail from tblpages where type=:pagetype";
 $query = $dbh -> prepare($sql);

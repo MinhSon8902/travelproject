@@ -6,8 +6,7 @@
             src="https://cdn-icons-png.flaticon.com/512/1257/1257385.png?w=740&t=st=1670319127~exp=1670319727~hmac=3df5cfb7b4b4084477c31021f476ce730b54abf3c78aacf2ff06db0c21295839"
             alt="Logo" class="logo"></a>
         <p class="footer-desc">
-          © 2022 BMS . All Rights Reserved
-          Hello How are you
+          © 2023 Team . Đã đăng ký Bản quyền
         </p>
         <div class="footer-input">
           <input type="text" placeholder="Enter your email" class="input-register" />
@@ -24,43 +23,43 @@
       <div class="footer__item">
         <ul class="footer-list">
           <li class="footer-item">
-            <h4 class="footer-title">Services</h4>
+            <h4 class="footer-title">Dịch vụ</h4>
           </li>
-          <li class="footer-item"><a href="#" class="footer-link">Trip Planner</a></li>
-          <li class="footer-item"><a href="#" class="footer-link">Tour Planning</a></li>
-          <li class="footer-item"><a href="#" class="footer-link">Tour Guide</a></li>
-          <li class="footer-item"><a href="#" class="footer-link">Tour Package</a></li>
-          <li class="footer-item"><a href="#" class="footer-link">Tour advice</a></li>
+          <li class="footer-item"><a href="#" class="footer-link">Kế hoạch chuyến đi</a></li>
+          <li class="footer-item"><a href="#" class="footer-link">Lập kế hoạch du lịch</a></li>
+          <li class="footer-item"><a href="#" class="footer-link">Hướng dẫn viên du lịch</a></li>
+          <li class="footer-item"><a href="#" class="footer-link">Gói du lịch</a></li>
+          <li class="footer-item"><a href="#" class="footer-link">Tư vấn du lịch</a></li>
         </ul>
       </div>
       <div class="footer__item">
         <ul class="footer-list">
           <li class="footer-item">
-            <h4 class="footer-title">Support</h4>
+            <h4 class="footer-title">Ủng hộ</h4>
           </li>
-          <li class="footer-item"><a href="#" class="footer-link">Account</a></li>
-          <li class="footer-item"><a href="#" class="footer-link">Legal</a></li>
-          <li class="footer-item"><a href="#" class="footer-link">Contact</a></li>
-          <li class="footer-item"><a href="#" class="footer-link">Terms & Condition</a></li>
-          <li class="footer-item"><a href="#" class="footer-link">Privacy Policy</a></li>
+          <li class="footer-item"><a href="#" class="footer-link">Tài khoản</a></li>
+          <li class="footer-item"><a href="#" class="footer-link">Góp Phần</a></li>
+          <li class="footer-item"><a href="#" class="footer-link">Liên hệ</a></li>
+          <li class="footer-item"><a href="#" class="footer-link">Điều khoản & Điều kiện</a></li>
+          <li class="footer-item"><a href="#" class="footer-link">Chính sách bảo mật</a></li>
         </ul>
       </div>
       <div class="footer__item">
         <ul class="footer-list">
           <li class="footer-item">
-            <h4 class="footer-title">Business</h4>
+            <h4 class="footer-title">Việc kinh doanh</h4>
           </li>
-          <li class="footer-item"><a href="#" class="footer-link">Success</a></li>
-          <li class="footer-item"><a href="#" class="footer-link">About Located</a></li>
+          <li class="footer-item"><a href="#" class="footer-link">Thành công</a></li>
+          <li class="footer-item"><a href="#" class="footer-link">Giới thiệu về vị trí</a></li>
           <li class="footer-item"><a href="#" class="footer-link">Blog</a></li>
-          <li class="footer-item"><a href="#" class="footer-link">Information</a></li>
-          <li class="footer-item"><a href="#" class="footer-link">Travel Guide</a></li>
+          <li class="footer-item"><a href="#" class="footer-link">Thông tin</a></li>
+          <li class="footer-item"><a href="#" class="footer-link">Hướng dẫn viên du lịch</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-line"></div>
     <ul class="footer-bottom">
-      <p class="footer-intro">Copyright© 2022 Team SBTC LLC. All rights reserved</p>
+      <p class="footer-intro">Copyright© 2023 Team SBTC LLC. All rights reserved</p>
       <div class="footer-social">
         <a href="#" class="footer-social__item"><i class="fa-brands fa-facebook footer-icon"></i></a>
         <a href="#" class="footer-social__item"><i class="fa-brands fa-instagram footer-icon"></i></a>

@@ -87,36 +87,36 @@ $error="Something went wrong. Please try again";
             <form class="form-control" name="package" action="" method="post" enctype="multipart/form-data">
               <div class="form-row">
                 <div class="form-group form-column">
-                  <label for="packagename" class="form-label">Package Name</label>
+                  <label for="packagename" class="form-label">Tên Tour</label>
                   <input type="text" class="form-input" name="packagename" id="packagename" placeholder="Create Package"
                     required>
                 </div>
                 <div class="form-group form-column">
-                  <label for="packagetype" class="form-label">Package Type</label>
-                  <input type="text" class="form-input" name="packagetype" id="packagetype" placeholder="Package Type"
+                  <label for="packagetype" class="form-label">Loại Tour</label>
+                  <input type="text" class="form-input" name="packagetype" id="packagetype" placeholder="Loại Tour"
                     required>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group form-column">
-                  <label for="packagelocation" class="form-label">Package Location</label>
+                  <label for="packagelocation" class="form-label">Địa Điểm</label>
                   <input type="text" class="form-input" name="packagelocation" id="packagelocation"
-                    placeholder="Package Location" required>
+                    placeholder="Địa Điểm" required>
                 </div>
                 <div class="form-group form-column">
-                  <label for="packageprice" class="form-label">Package Price in USD</label>
+                  <label for="packageprice" class="form-label">Giá Tour</label>
                   <input type="text" class="form-input" name="packageprice" id="packageprice"
                     placeholder="Package Price is USD" required>
                 </div>
               </div>
               <div class="form-group">
-                <label for="" class="form-label">Package Features</label>
+                <label for="" class="form-label">Tính Năng</label>
                 <input type="text" class="form-input" name="packagefeatures" id="packagefeatures"
-                  placeholder="Package Features" required>
+                  placeholder="Tính Năng" required>
               </div>
               <div class="form-group">
-                <label for="packagedetails" class="form-label">Package Details</label>
-                <textarea name="packagedetails" id="packagedetails" rows="10" placeholder="Package Details"></textarea>
+                <label for="packagedetails" class="form-label">Chi Tiết Tour</label>
+                <textarea name="packagedetails" id="packagedetails" rows="10" placeholder="Chi Tiết Tour"></textarea>
               </div>
               <div class="form-group form-file">
                 <label for="packageimage" class="form-label"><i class="fa-solid fa-upload"></i></label>

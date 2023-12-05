@@ -109,7 +109,7 @@ $error="Something went wrong. Please try again";
   <main>
     <div class="form">
       <div class="form-container">
-        <h3 class="form-title">Enquiry Form</h3>
+        <h3 class="form-title">Form Góp Ý</h3>
         <form action="" name="changePass" method="post" class="form" onSubmit="return validate();">
           <?php if($error){?><div class="notify notify--error">
             <strong>ERROR</strong>:<?php echo htmlentities($error); ?>
@@ -119,7 +119,7 @@ $error="Something went wrong. Please try again";
           </div><?php }?>
 
           <div class="form-group">
-            <label for="" class="form-label">Full name: </label>
+            <label for="" class="form-label">Tên Người Dùng: </label>
             <input type="text" name="name" id="name" class="form-input" placeholder="Full Name" required>
           </div>
           <div class="form-group">
@@ -127,18 +127,18 @@ $error="Something went wrong. Please try again";
             <input type="text" name="email" id="email" class="form-input" placeholder="Email" required>
           </div>
           <div class="form-group">
-            <label for="" class="form-label">Mobile: </label>
+            <label for="" class="form-label">Số Điện Thoại: </label>
             <input type="text" name="mobile" id="mobile" class="form-input" placeholder="Mobile" required>
           </div>
           <div class="form-group">
-            <label for="" class="form-label">Category: </label>
+            <label for="" class="form-label">Danh Mục: </label>
             <input type="text" name="category" id="category" class="form-input" placeholder="Category" required>
           </div>
           <div class="form-group">
-            <label for="" class="form-label">Description: </label>
+            <label for="" class="form-label">Mô Tả: </label>
             <textarea name="description" id="description" cols="6" rows="7" placeholder="Description"></textarea>
           </div>
-          <button type="submit" name="submit" class="btn btn--primary">Send</button>
+          <button type="submit" name="submit" class="btn btn--primary">Gửi</button>
         </form>
       </div>
 

@@ -44,7 +44,7 @@ if(isset($_POST['submitup']))
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Create your account</h5>
+        <h5 class="modal-title">Tạo Tài Khoản Cho Bạn</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -110,15 +110,15 @@ if(isset($_POST['submitup']))
           </a>
         </div>
         <div class="line">
-          <span class="line-text">or signup with Email</span>
+          <span class="line-text">hoặc Đăng Ký với email</span>
         </div>
         <form action="" method="post" class="form">
           <div class="form-group">
-            <label for="input-name" class="form-label">Full Name</label>
+            <label for="input-name" class="form-label">Tên Của Bạn</label>
             <input type="text" name="name" id="name" placeholder="Full Name" required>
           </div>
           <div class="form-group">
-            <label for="input-name" class="form-label">Mobile</label>
+            <label for="input-name" class="form-label">Số Điện Thoại</label>
             <input type="text" name="mobile" id="mobile" placeholder="Mobile" required>
           </div>
           <div class="form-group">
@@ -126,12 +126,12 @@ if(isset($_POST['submitup']))
             <input type="email" name="email" id="email" placeholder="Email" required>
           </div>
           <div class="form-group">
-            <label for="input-password" class="form-label">Password</label>
+            <label for="input-password" class="form-label">Mật Khẩu</label>
             <input type="password" name="password" id="password" placeholder="Password" required>
             <!-- <i class="fa-regular fa-eye-slash"></i>
             <i class="fa-regular fa-eye"></i> -->
           </div>
-          <button type="submit" class="form-submit" name="submitup">Create Account</button>
+          <button type="submit" class="form-submit" name="submitup">Tạo Tài Khoản</button>
         </form>
       </div>
     </div>

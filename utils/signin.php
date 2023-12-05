@@ -4,7 +4,7 @@ if(isset($_POST['form-submit']))
 {
 $email=$_POST['email'];
 $password=$_POST['password'];
-$sql ="SELECT id,FullName FROM tblusers WHERE EmailId=:email and Password=:password";
+$sql ="SELECT id,FullName,EmailId FROM tblusers WHERE EmailId=:email and Password=:password";
 $query= $dbh -> prepare($sql);
 $query-> bindParam(':email', $email, PDO::PARAM_STR);
 $query-> bindParam(':password', $password, PDO::PARAM_STR);
@@ -14,6 +14,7 @@ if($query->rowCount() > 0)
 {
 $_SESSION['login']=$results[0]->id;
 $_SESSION['nameUser']=$results[0]->FullName;
+$_SESSION['emailIdd']=$results[0]->EmailId;
 $_SESSION['msgsssi']="Chào mừng bạn đã đến website của chúng tôi ";
 echo "<script type='text/javascript'> document.location = 'index.php'; </script>";
 } else{
@@ -93,23 +94,23 @@ echo "<script type='text/javascript'> document.location = 'index.php'; </script>
           </a>
         </div>
         <div class="line">
-          <span class="line-text">or login with username</span>
+          <span class="line-text">hoặc đăng nhập với tên tài khoản</span>
         </div>
         <form action="" method="post" class="form">
           <div class="form-group">
-            <label for="input-name" class="form-label">Username</label>
+            <label for="input-name" class="form-label">Tên Tài Khoản</label>
             <input type="text" name="email" id="email" placeholder="Username" required>
           </div>
           <div class="form-group">
-            <label for="input-password" class="form-label">Password</label>
+            <label for="input-password" class="form-label">Mật Khẩu</label>
             <input type="password" name="password" id="password" placeholder="Password" required>
             <!-- <i class="fa-regular fa-eye-slash"></i>
             <i class="fa-regular fa-eye"></i> -->
           </div>
           <div class="form-group">
-            <a href="forgot-password.php" class="form-group__link">Forgot your password?</a>
+            <a href="forgot-password.php" class="form-group__link">Quên Mật Khẩu?</a>
           </div>
-          <button type="submit" class="form-submit" name="form-submit">Sign in</button>
+          <button type="submit" class="form-submit" name="form-submit">Đăng Nhập</button>
         </form>
       </div>
     </div>

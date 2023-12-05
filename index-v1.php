@@ -396,8 +396,8 @@ if (!empty($conditions)) {
                         <span>(128 reviews)</span>
                       </p>
                     </div>
-                    <p class="card-type">Package Type: <?php echo htmlentities($result->PackageType);?></p>
-                    <p class="card-location">Package Location: <?php echo htmlentities($result->PackageLocation);?></p>
+                    <p class="card-type">Loại Tour: <?php echo htmlentities($result->PackageType);?></p>
+                    <p class="card-location">Địa Điểm: <?php echo htmlentities($result->PackageLocation);?></p>
                     <p class="card-desc">Mô Tả: <?php echo htmlentities($result->PackageFetures);?></p>
                   </div>
                   <div class="card-info">
@@ -442,8 +442,8 @@ foreach($results as $result)
                         <span>(298 reviews)</span>
                       </p>
                     </div>
-                    <p class="card-type">Package Type: <?php echo htmlentities($result->PackageType);?></p>
-                    <p class="card-location">Package Location: <?php echo htmlentities($result->PackageLocation);?></p>
+                    <p class="card-type">Loại Tour: <?php echo htmlentities($result->PackageType);?></p>
+                    <p class="card-location">Địa Điểm: <?php echo htmlentities($result->PackageLocation);?></p>
                     <p class="card-desc">Mô Tả: <?php echo htmlentities($result->PackageFetures);?></p>
                   </div>
                   <div class="card-info">

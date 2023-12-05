@@ -77,7 +77,7 @@ foreach($results as $result)
             </div>
             <div class="form-group">
               <label for="packagedetails" class="form-label">Remark: </label>
-              <textarea name="remark" rows="10" placeholder="Package Details"></textarea>
+              <textarea name="remark" rows="10" placeholder="Chi Tiết Tour"></textarea>
             </div>
             <button type="submit" name="submitissue" class="btn btn--issue">Update</button>
             <?php } else { ?>

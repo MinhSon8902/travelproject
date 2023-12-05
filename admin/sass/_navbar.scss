@@ -77,11 +77,12 @@
   }
   &-dropdown {
     position: absolute;
-    left: 80%;
+    left: 85%;
     top: 5px;
     list-style: none;
     opacity: 0;
     visibility: hidden;
+    z-index: 999;
     &__item {
       display: flex;
       align-items: center;
@@ -107,9 +108,4 @@
       font-family: 'Noto Sans', sans-serif;
     }
   }
-}
-
-.enable-button {
-  background-color: red !important;
-  pointer-events: none;
 }

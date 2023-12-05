@@ -7,15 +7,16 @@
             src="https://cdn-icons-png.flaticon.com/512/1257/1257385.png?w=740&t=st=1670319127~exp=1670319727~hmac=3df5cfb7b4b4084477c31021f476ce730b54abf3c78aacf2ff06db0c21295839"
             alt="Logo" class="logo"></a>
       </li>
-      <li class="header-top__item"><a href="profile.php" class="header-top__link">My Profile</a></li>
-      <li class="header-top__item"><a href="change-password.php" class="header-top__link">Change Password</a></li>
-      <li class="header-top__item"><a href="tour-history.php" class="header-top__link">My Tour History</a></li>
-      <li class="header-top__item"><a href="issuetickets.php" class="header-top__link">Issue Tickets</a></li>
+      <li class="header-top__item"><a href="profile.php" class="header-top__link">Thông tin của tôi</a></li>
+      <li class="header-top__item"><a href="change-password.php" class="header-top__link">Đổi mật khẩu</a></li>
+      <li class="header-top__item"><a href="tour-history.php" class="header-top__link">Lịch sử chuyến đi của tôi</a>
+      </li>
+      <li class="header-top__item"><a href="issuetickets.php" class="header-top__link">Phản Hồi Vấn Đề</a></li>
     </ul>
     <ul class="header-info">
       <li class="header-top__item">XIN CHAO: </li>
       <li class="header-top__item"><?php echo htmlentities($_SESSION['nameUser']);?></li>
-      <li class="header-top__item"><a href="logout.php">Logout</a></li>
+      <li class="header-top__item"><a href="logout.php">Đăng Xuất</a></li>
     </ul>
   </div>
 </div>
@@ -41,7 +42,7 @@ else {?>
               <path d="M9.63623 9.88877V8.49977" stroke="#131313" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
-            Login Manager
+            Quản Lý
           </a></li>
       </ul>
       <ul class="header-list">
@@ -58,9 +59,9 @@ else {?>
               <path d="M9.63623 9.88877V8.49977" stroke="#131313" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
-            Login</a></li>
+            Đăng Nhập</a></li>
         <li class="header-item"><a id="modalBoxUp" class="header-link signup"><i
-              class="fa-solid fa-arrow-right-to-bracket"></i>Signup</a></li>
+              class="fa-solid fa-arrow-right-to-bracket"></i>Đăng Ký</a></li>
       </ul>
     </div>
   </header>
@@ -70,18 +71,19 @@ else {?>
   <div class="navigation">
     <div class="navigation-container">
       <ul class="navigation-list">
-        <li class="navigation-item"><a href="index.php" class="navigation-link">Home</a></li>
-        <li class="navigation-item"><a href="page.php?type=aboutus" class="navigation-link">About</a></li>
-        <li class="navigation-item"><a href="package-list.php" class="navigation-link">Tour Package</a></li>
-        <li class="navigation-item"><a href="page.php?type=privacy" class="navigation-link">Privacy Policy</a></li>
-        <li class="navigation-item"><a href="page.php?type=terms" class="navigation-link">Term of Use</a></li>
+        <li class="navigation-item"><a href="index.php" class="navigation-link">Trang Chủ</a></li>
+        <li class="navigation-item"><a href="page.php?type=aboutus" class="navigation-link">Thông Tin</a></li>
+        <li class="navigation-item"><a href="package-list.php" class="navigation-link">Các Tour</a></li>
+        <li class="navigation-item"><a href="page.php?type=privacy" class="navigation-link">Chính Sách Bảo Mật</a></li>
+        <li class="navigation-item"><a href="page.php?type=terms" class="navigation-link">Điều khoản sử dụng</a></li>
         <?php if($_SESSION['login'])
 {?>
-        <li class="navigation-item"><a id="modalSupport" class="navigation-link">Support</a></li>
+        <li class="navigation-item"><a id="modalSupport" class="navigation-link">Hỗ Trợ</a></li>
         <?php } else { ?>
-        <li class="navigation-item"><a href="enquiry.php" class="navigation-link">Enquiry</a></li>
+        <li class="navigation-item"><a href="enquiry.php" class="navigation-link">Góp Ý</a></li>
         <?php } ?>
-        <li class="navigation-item"><a href="page.php?type=contact" class="navigation-link">Contact Us</a></li>
+        <li class="navigation-item"><a href="page.php?type=contact" class="navigation-link">Kết Nối Với Chúng Tôi</a>
+        </li>
       </ul>
     </div>
   </div>

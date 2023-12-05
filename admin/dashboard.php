@@ -15,7 +15,7 @@ else{
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Trang Chủ</title>
   <link rel="shortcut icon"
     href="https://cdn-icons-png.flaticon.com/512/1257/1257385.png?w=740&t=st=1670319127~exp=1670319727~hmac=3df5cfb7b4b4084477c31021f476ce730b54abf3c78aacf2ff06db0c21295839"
     type="image/x-icon">
@@ -41,8 +41,8 @@ else{
       </div>
       <div class="main-right">
         <div class="main-navigation">
-          <div class="main-navigation__item"><a href="dashboard.php">Home</a><i
-              class="fa-solid fa-chevron-right"></i>Dashboard
+          <div class="main-navigation__item"><a href="dashboard.php">Trang Chủ</a><i
+              class="fa-solid fa-chevron-right"></i>Nhà
           </div>
         </div>
         <div class="main-content">
@@ -50,7 +50,7 @@ else{
             <div class="main-item">
               <i class="fa-solid fa-user"></i>
               <div class="main-item__content">
-                <h3 class="main-title">User</h3>
+                <h3 class="main-title">Tài Khoản Người Dùng</h3>
                 <?php $sql = "SELECT id from tblusers";
                     $query = $dbh -> prepare($sql);
                     $query->execute();
@@ -63,7 +63,7 @@ else{
             <div class="main-item">
               <i class="fa-solid fa-person"></i>
               <div class="main-item__content">
-                <h3 class="main-title">Staff</h3>
+                <h3 class="main-title">Tài Khoản Nhân Viên</h3>
                 <?php $sql = "SELECT id from tbladmin";
                     $query = $dbh -> prepare($sql);
                     $query->execute();
@@ -76,7 +76,7 @@ else{
             <div class="main-item">
               <i class="fa-solid fa-rectangle-list"></i>
               <div class="main-item__content">
-                <h3 class="main-title">Bookings</h3>
+                <h3 class="main-title">Số Lượng Đặt Tour</h3>
                 <?php $sql1 = "SELECT BookingId from tblbooking";
                     $query1 = $dbh -> prepare($sql1);
                     $query1->execute();
@@ -89,7 +89,7 @@ else{
             <div class="main-item">
               <i class="fa-solid fa-code-pull-request"></i>
               <div class="main-item__content">
-                <h3 class="main-title">Enquiries</h3>
+                <h3 class="main-title">Số Lượng Góp Ý</h3>
                 <?php $sql2 = "SELECT id from tblenquiry";
                   $query2= $dbh -> prepare($sql2);
                   $query2->execute();
@@ -102,7 +102,7 @@ else{
             <div class="main-item">
               <i class="fa-solid fa-box-archive"></i>
               <div class="main-item__content">
-                <h3 class="main-title">Total packages</h3>
+                <h3 class="main-title">Số Lượng Các Tour</h3>
                 <?php $sql3 = "SELECT PackageId from tbltourpackages";
                   $query3= $dbh -> prepare($sql3);
                   $query3->execute();
@@ -115,7 +115,7 @@ else{
             <div class="main-item">
               <i class="fa-regular fa-message"></i>
               <div class="main-item__content">
-                <h3 class="main-title">Issues</h3>
+                <h3 class="main-title">Số Lượng Phản Hồi</h3>
                 <?php $sql5 = "SELECT id from tblissues";
                     $query5= $dbh -> prepare($sql5);
                     $query5->execute();

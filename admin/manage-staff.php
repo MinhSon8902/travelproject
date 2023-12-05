@@ -40,7 +40,8 @@ else{
     </div>
     <div class="main-right">
       <div class="main-navigation">
-        <div class="main-navigation__item"><a href="dashboard.php">Home</a><i class="fa-solid fa-chevron-right"></i>Manager
+        <div class="main-navigation__item"><a href="dashboard.php">Home</a><i
+            class="fa-solid fa-chevron-right"></i>Manager
           Account
         </div>
       </div>
@@ -50,7 +51,7 @@ else{
           <table id="table">
             <thead>
               <tr>
-              <th>#</th>
+                <th>#</th>
                 <th>Name</th>
                 <th>Mobile No.</th>
                 <th>UserName </th>
@@ -61,7 +62,7 @@ else{
               </tr>
             </thead>
             <tbody>
-              <?php $sql = "SELECT * from tblstaff";
+              <?php $sql = "SELECT * from tbladmin";
           $query = $dbh -> prepare($sql);
           $query->execute();
           $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -80,7 +81,7 @@ else{
                   <?php if ($result->role == 1) echo "Nhân Viên Chăm Sóc"?>
                   <?php if ($result->role == 2) echo "Nhân Viên Thống Kê"?>
                   <?php if ($result->role == 3) echo "Nhân Viên Page"?>
-                  </td>
+                </td>
                 <td><?php echo htmlentities($result->updationDate);?></td>
                 <td><a href="update-account.php?pid=<?php echo htmlentities($result->id);?>">
                     <button type="button" class="btn btn--primary">View Details</button></a></td>

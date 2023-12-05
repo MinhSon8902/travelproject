@@ -90,38 +90,38 @@ foreach($results as $result)
           <form class="form-control" name="package" action="" method="post" enctype="multipart/form-data">
             <div class="form-row">
               <div class="form-group form-column">
-                <label for="packagename" class="form-label">Package Name</label>
+                <label for="packagename" class="form-label">Tên Tour</label>
                 <input type="text" class="form-input" name="packagename" id="packagename" placeholder="Create Package"
                   value="<?php echo htmlentities($result->PackageName);?>" required>
               </div>
               <div class="form-group form-column">
-                <label for="packagetype" class="form-label">Package Type</label>
-                <input type="text" class="form-input" name="packagetype" id="packagetype" placeholder="Package Type"
+                <label for="packagetype" class="form-label">Loại Tour</label>
+                <input type="text" class="form-input" name="packagetype" id="packagetype" placeholder="Loại Tour"
                   value="<?php echo htmlentities($result->PackageType);?>" required>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group form-column">
-                <label for="packagelocation" class="form-label">Package Location</label>
+                <label for="packagelocation" class="form-label">Địa Điểm</label>
                 <input type="text" class="form-input" name="packagelocation" id="packagelocation"
-                  placeholder="Package Location" value="<?php echo htmlentities($result->PackageLocation);?>" required>
+                  placeholder="Địa Điểm" value="<?php echo htmlentities($result->PackageLocation);?>" required>
               </div>
               <div class="form-group form-column">
-                <label for="packageprice" class="form-label">Package Price in USD</label>
+                <label for="packageprice" class="form-label">Giá Tour</label>
                 <input type="text" class="form-input" name="packageprice" id="packageprice"
                   placeholder="Package Price is USD" value="<?php echo htmlentities($result->PackagePrice);?>" required>
               </div>
             </div>
             <div class="form-group">
-              <label for="" class="form-label">Package Features</label>
+              <label for="" class="form-label">Tính Năng</label>
               <input type="text" class="form-input" name="packagefeatures" id="packagefeatures"
-                placeholder="Package Features Eg-free Pickup-drop facility"
+                placeholder="Tính Năng Eg-free Pickup-drop facility"
                 value="<?php echo htmlentities($result->PackageFetures);?>" required>
             </div>
             <div class="form-group">
-              <label for="packagedetails" class="form-label">Package Details</label>
+              <label for="packagedetails" class="form-label">Chi Tiết Tour</label>
               <textarea name="packagedetails" id="packagedetails" rows="10"
-                placeholder="Package Details"><?php echo htmlentities($result->PackageDetails);?></textarea>
+                placeholder="Chi Tiết Tour"><?php echo htmlentities($result->PackageDetails);?></textarea>
             </div>
             <div class="form-group form-group__img">
               <img src="packageimages/<?php echo htmlentities($result->PackageImage);?>" width="200"
@@ -130,7 +130,7 @@ foreach($results as $result)
                 Image</a>
             </div>
             <div class="form-group">
-              <label for="" class="form-label">Last Updation Date</label>
+              <label for="" class="form-label">Cập Nhật Lần Cuối</label>
               <div class="col-sm-8">
                 <?php echo htmlentities($result->UpdationDate);?>
               </div>

@@ -130,7 +130,7 @@ foreach($results as $result)
             <tr>
               <th>#</th>
               <th>Booking Id</th>
-              <th>Package Name</th>
+              <th>Tên Tour</th>
               <th>From</th>
               <th>To</th>
               <th>Comment</th>

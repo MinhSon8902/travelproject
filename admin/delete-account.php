@@ -3,7 +3,7 @@ session_start();
 include('utils/config.php');
 
  $uid=intval($_GET['gid']);
- $sql = "DELETE FROM tblstaff WHERE id=:uid";
+ $sql = "DELETE FROM tbladmin WHERE id=:uid";
  $query = $dbh -> prepare($sql);
  $query -> bindParam(':uid', $uid, PDO::PARAM_STR);
  if( $query->execute()){

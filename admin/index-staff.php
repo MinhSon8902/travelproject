@@ -50,7 +50,7 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
   <div class="wrapper">
     <div class="main">
       <div class="main-container">
-        <h1 class="main-heading">Get’s started.</h1>
+        <h1 class="main-heading">Việc Quản Lý Toàn Bộ Website của bạn</h1>
         <div class="main-social">
           <a class="main-social__item" href="">
             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -113,25 +113,25 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
           </a>
         </div>
         <div class="line">
-          <span class="line-text">or login with username</span>
+          <span class="line-text">hoặc đăng nhập bằng tên tài khoản</span>
         </div>
         <form action="" method="post" class="form">
           <div class="form-group">
-            <label for="input-name" class="form-label">Username</label>
+            <label for="input-name" class="form-label">Tên Tài Khoản</label>
             <input type="text" name="username" class="username" id="input-name" required="">
           </div>
           <div class="form-group">
-            <label for="input-password" class="form-label">Password</label>
+            <label for="input-password" class="form-label">Mật Khẩu</label>
             <input type="password" name="password" class="password" id="input-password" required="">
             <!-- <i class="fa-regular fa-eye-slash"></i>
             <i class="fa-regular fa-eye"></i> -->
           </div>
           <div class="form-group">
-            <a href="#" class="form-group__link">Forgot your password?</a>
+            <a href="#" class="form-group__link">Quên Mật Khẩu?</a>
           </div>
-          <button type="submit" class="form-submit" name="form-submit">Sign in</button>
+          <button type="submit" class="form-submit" name="form-submit">Đăng Nhập</button>
         </form>
-        <a href="../index.php" class="form-group__link">Back To Home</a>
+        <a href="../index.php" class="form-group__link">Quay Về Trang Chủ</a>
       </div>
     </div>
   </div>

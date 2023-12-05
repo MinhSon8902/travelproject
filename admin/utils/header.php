@@ -21,7 +21,7 @@ $role=$_SESSION['arole']
           fill="#353945" />
       </svg>
     </a>
-    <h2 class="header-heading">Manager Travel</h2>
+    <h2 class="header-heading">Quản Lý Toàn Bộ Website Du Lịch</h2>
     <div class="header-action">
       <a href="#" class="header-action__link"><i class="fa-regular fa-bookmark header-action__icon"></i></a>
       <a href="#" class="header-action__link"><i class="fa-regular fa-bell header-action__icon"></i></a>
@@ -30,7 +30,7 @@ $role=$_SESSION['arole']
     <div class="header-admin">
       <i class="fa-solid fa-user-gear"></i>
       <div class="header-info">
-        <p class="header-info__title">Welcome</p>
+        <p class="header-info__title">Xin Chào</p>
         <span class="header-info__name"><?php if($role == 0) echo "Quản Lý";
         else if ($role == 1) echo "Nhân Viên Chăm Sóc";
         else if ($role == 2) echo "Nhân Viên Thống Kê";
@@ -40,9 +40,9 @@ $role=$_SESSION['arole']
       <!-- <i class="fa-solid fa-chevron-up"></i> -->
       <ul class="header-dropdown">
         <li class="header-dropdown__item"> <a href="change-password-acc.php" class="header-dropdown__link"><i
-              class="fa-regular fa-address-card header-dropdown__icon"></i>Profile</a> </li>
+              class="fa-regular fa-address-card header-dropdown__icon"></i>Thông Tin Tài Khoản</a> </li>
         <li class="header-dropdown__item"> <a href="logout.php" class="header-dropdown__link"><i
-              class="fa-solid fa-arrow-right-from-bracket header-dropdown__icon"></i>Logout</a> </li>
+              class="fa-solid fa-arrow-right-from-bracket header-dropdown__icon"></i>Đăng Xuất</a> </li>
       </ul>
     </div>
   </div>

@@ -114,7 +114,7 @@ $msg="Profile Updated Successfully";
 
           <?php 
 $useremail=$_SESSION['login'];
-$sql = "SELECT * from tblusers where EmailId=:useremail";
+$sql = "SELECT * from tblusers where id =:useremail";
 $query = $dbh -> prepare($sql);
 $query -> bindParam(':useremail',$useremail, PDO::PARAM_STR);
 $query->execute();
@@ -126,17 +126,17 @@ foreach($results as $result)
 {	?>
 
           <div class="form-group">
-            <label for="" class="form-label">Name: </label>
+            <label for="" class="form-label">Tên: </label>
             <input type="text" name="name" id="name" class="form-input"
               value="<?php echo htmlentities($result->FullName);?>" required>
           </div>
           <div class="form-group">
-            <label for="" class="form-label">Mobile: </label>
+            <label for="" class="form-label">Số Điện Thoại: </label>
             <input type="text" name="mobile" id="mobile" class="form-input"
               value="<?php echo htmlentities($result->MobileNumber);?>" required>
           </div>
           <div class="form-group">
-            <label for="" class="form-label">Password: </label>
+            <label for="" class="form-label">Mật Khẩu:: </label>
             <input type="text" name="password" id="password" class="form-input"
               value="<?php echo htmlentities($result->Password);?>" readonly>
           </div>
@@ -146,7 +146,7 @@ foreach($results as $result)
               value="<?php echo htmlentities($result->EmailId);?>" readonly>
           </div>
           <div class="form-group">
-            <span class="form-text">Days Update: <?php echo htmlentities($result->UpdationDate);?></span>
+            <span class="form-text">Ngày Tạo: <?php echo htmlentities($result->UpdationDate);?></span>
           </div>
           <div class="form-group">
             <span class="form-text">Days Create: <?php echo htmlentities($result->RegDate);?></span>
@@ -155,7 +155,6 @@ foreach($results as $result)
           <button type="submit" name="submit" class="btn btn--primary">Update</button>
         </form>
       </div>
-
     </div>
     <?php include('utils/footer.php');?>
   </main>

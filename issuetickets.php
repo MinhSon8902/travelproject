@@ -88,7 +88,8 @@ else{
   <main>
     <div class="issue">
       <div class="issue-container">
-        <h3 class="form-title">Issue Tickets</h3>
+        <h3 class="form-title">Phản Hồi</h3>
+        <?php echo $_SESSION['emailId'] ?>
         <form action="" name="issue" method="post" class="form">
           <?php if($error){?><div class="notify notify--error">
             <strong>ERROR</strong>:<?php echo htmlentities($error); ?>
@@ -107,8 +108,7 @@ else{
               <th>Remark date</th>
             </tr>
             <?php 
-
-$uemail=$_SESSION['login'];
+$uemail=$_SESSION['emailIdd'];
 $sql = "SELECT * from tblissues where UserEmail=:uemail";
 $query = $dbh->prepare($sql);
 $query -> bindParam(':uemail', $uemail, PDO::PARAM_STR);
@@ -132,7 +132,6 @@ foreach($results as $result)
           </table>
         </form>
       </div>
-
     </div>
     <?php include('utils/footer.php');?>
   </main>
