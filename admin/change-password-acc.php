@@ -12,7 +12,7 @@ if(isset($_POST['submit']))
 $password=$_POST['password'];
 $newpassword=$_POST['newpassword'];
 $username=$_SESSION['alogin'];
-	$sql ="SELECT Password FROM tbladmin WHERE UserName=:username and Password=:password";
+	$sql ="SELECT Password FROM tbladmin WHERE id=:username and Password=:password";
 $query= $dbh -> prepare($sql);
 $query-> bindParam(':username', $username, PDO::PARAM_STR);
 $query-> bindParam(':password', $password, PDO::PARAM_STR);
@@ -20,7 +20,7 @@ $query-> execute();
 $results = $query -> fetchAll(PDO::FETCH_OBJ);
 if($query -> rowCount() > 0)
 {
-  $con="update tbladmin set Password=:newpassword where UserName=:username";
+  $con="update tbladmin set Password=:newpassword where id=:username";
   $changepass = $dbh->prepare($con);
   $changepass-> bindParam(':username', $username, PDO::PARAM_STR);
   $changepass-> bindParam(':newpassword', $newpassword, PDO::PARAM_STR);

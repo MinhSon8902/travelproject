@@ -4,7 +4,7 @@ if(isset($_POST['submitus']))
 {
 $issue=$_POST['issue'];
 $description=$_POST['description'];
-$email=$_SESSION['login'];
+$email=$_SESSION['emailIdd'];
 $sql="INSERT INTO  tblissues(UserEmail,Issue,Description) VALUES(:email,:issue,:description)";
 $query = $dbh->prepare($sql);
 $query->bindParam(':issue',$issue,PDO::PARAM_STR);
@@ -37,15 +37,15 @@ echo "<script type='text/javascript'> document.location = 'thankyou.php'; </scri
           <form action="" method="post" class="help">
             <div class="form-group">
               <select id="country" name="issue" class="form-select">
-                <option value="">Select Issue</option>
-                <option value="Booking Issues">Booking Issues</option>
-                <option value="Cancellation"> Cancellation</option>
-                <option value="Refund">Refund</option>
-                <option value="Other">Other</option>
+                <option value="">Chọn Vấn Đề</option>
+                <option value="Booking Issues">Vấn Đề ĐặtTour</option>
+                <option value="Cancellation"> Vấn Đề Hủy Tour</option>
+                <option value="Refund">Vấn Đề Phản Hồi</option>
+                <option value="Other">Khác</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="input-name" class="form-label">Username</label>
+              <label for="input-name" class="form-label">Mô Tả Vấn Đề</label>
               <input type="text" name="description" id="description" placeholder="Description">
             </div>
             <button type="submit" class="form-submit" name="submitus">Submit</button>

@@ -94,10 +94,16 @@ $results=$query->fetchAll(PDO::FETCH_OBJ);
 $cnt=1;
 if($query->rowCount() > 0)
 {
+  $typeMapping = [
+    'privacy' => 'Bảo mật',
+    'terms' => 'Chính sách',
+    'contact' => 'Kết nối',
+    'aboutus' => 'Thông tin'
+];
 foreach($results as $result)
 {		
 ?>
-        <h3><?php echo $_GET['type'] ?></h3>
+        <h3 style="margin-bottom: 20px;"><?php echo $typeMapping[$_GET['type']] ?? $_GET['type']; ?></h3>
         <p>
           <?php echo $result->detail; ?>
         </p>
